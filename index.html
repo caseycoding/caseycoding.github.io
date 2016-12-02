@@ -5,15 +5,12 @@
   
   <title>bookkeeping</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="bookkeeping">
 <meta property="og:url" content="http://caseycoding.github.io/index.html">
 <meta property="og:site_name" content="bookkeeping">
-<meta property="og:description">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bookkeeping">
-<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="bookkeeping" type="application/atom+xml">
   
@@ -21,7 +18,7 @@
     <link rel="icon" href="/favicon.png">
   
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
   
 
 </head>
@@ -57,6 +54,104 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-10-js-to-remember" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/07/10-js-to-remember/" class="article-date">
+  <time datetime="2016-11-07T16:05:34.000Z" itemprop="datePublished">2016-11-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/07/10-js-to-remember/">10 js to remember</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>Functions</p>
+<ul>
+<li>every function returns <strong>something</strong>, with =&gt; this is implicit, otherwise this needs to be explicit<ul>
+<li>arr.push(value) returns a number</li>
+</ul>
+</li>
+<li>function parameters are evaluated before being set to their corresponding variables</li>
+<li>all functions return something</li>
+</ul>
+</li>
+<li><p>There are built in features to many things, if you think what you may be doing is somewhat common see if it’s built in.</p>
+</li>
+<li>() are magical in js, they invoke functions and are on the top of order of operations</li>
+<li>. vs []</li>
+<li></li>
+<li></li>
+<li>Errors<ul>
+<li>Reference error - I couldn’t find the variable used</li>
+<li>Type error - tried to do something like call </li>
+<li></li>
+</ul>
+</li>
+</ul>
+<p>indentation<br>mispelling it’s a fucking computer - autocomplete<br>not commenting console logs</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://caseycoding.github.io/2016/11/07/10-js-to-remember/" data-id="ciw864jl20000cnvp2pfqjkdv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-environment-variables" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/01/22/environment-variables/" class="article-date">
+  <time datetime="2016-01-22T21:12:07.000Z" itemprop="datePublished">2016-01-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/22/environment-variables/">environment variables</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Working with environment variables to make my live easier</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://caseycoding.github.io/2016/01/22/environment-variables/" data-id="ciw864jl90002cnvpftzblw7w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-notes" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/11/30/notes/" class="article-date">
@@ -79,18 +174,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="starting_and_stopping_mongo"><a href="#starting_and_stopping_mongo" class="headerlink" title="starting and stopping mongo"></a>starting and stopping mongo</h2><p>If you have mongodb installed via homebrew, homebrew actually has a handy brew services command. To show current running services:<br><code>brew services list</code><br>To start mongodb:<br><code>brew services start mongodb</code><br>To stop mongodb if it’s already running:<br><code>brew services stop mongodb</code></p>
+        <h2 id="git-semantic-differences"><a href="#git-semantic-differences" class="headerlink" title="git semantic differences"></a>git semantic differences</h2><p>git merge feature (into current)</p>
+<p>git rebase (onto) master</p>
+<p>[remote]/[branch name on remote] = local name for the branch</p>
+<h2 id="subl-Sublime-from-the-command-line"><a href="#subl-Sublime-from-the-command-line" class="headerlink" title="subl (Sublime from the command line)"></a>subl (Sublime from the command line)</h2><p><code>ln -sv &quot;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&quot; /usr/local/bin/subl</code></p>
+<h2 id="Ignore-duplicate-entries-in-bash-history"><a href="#Ignore-duplicate-entries-in-bash-history" class="headerlink" title="Ignore duplicate entries in bash history"></a>Ignore duplicate entries in bash history</h2><p><code>HISTCONTROL=ignoredups</code></p>
+<h2 id="starting-and-stopping-mongo"><a href="#starting-and-stopping-mongo" class="headerlink" title="starting and stopping mongo"></a>starting and stopping mongo</h2><p>If you have mongodb installed via homebrew, homebrew actually has a handy brew services command. To show current running services:<br><code>brew services list</code><br>To start mongodb:<br><code>brew services start mongodb</code><br>To stop mongodb if it’s already running:<br><code>brew services stop mongodb</code></p>
 <p>(source)[<a href="http://stackoverflow.com/questions/8495293/whats-a-clean-way-to-stop-mongod-on-mac-os-x" target="_blank" rel="external">http://stackoverflow.com/questions/8495293/whats-a-clean-way-to-stop-mongod-on-mac-os-x</a>]</p>
 <h2 id="yaml"><a href="#yaml" class="headerlink" title="yaml"></a>yaml</h2><p>Basically JSON</p>
 <p><a href="http://www.yaml.org/start.html" target="_blank" rel="external">http://www.yaml.org/start.html</a></p>
 <h2 id="ESP8266"><a href="#ESP8266" class="headerlink" title="ESP8266"></a>ESP8266</h2><p>“It is sold as a wifi to serial module.”</p>
-<h2 id="nano"><a href="#nano" class="headerlink" title="nano"></a>nano</h2><p>delete line:<br>C(aka control)+k</p>
-<h2 id="pi_check_disk_space"><a href="#pi_check_disk_space" class="headerlink" title="pi check disk space"></a>pi check disk space</h2><p>df -Bg</p>
+<h2 id="nano"><a href="#nano" class="headerlink" title="nano"></a>nano</h2><p>delete line:<br>control+c+k<br><code>control-</code> will give you a line prompt<br><code>nano +[line #] filename</code> to open at line</p>
+<h2 id="pi-check-disk-space"><a href="#pi-check-disk-space" class="headerlink" title="pi check disk space"></a>pi check disk space</h2><p>df -Bg</p>
+<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><p>hexo new [title]</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2015/11/30/notes/" data-id="cirtqbvc20001hpvpkovwz2ql" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2015/11/30/notes/" data-id="ciw864jlb0003cnvpoydmes3j" class="article-share-link">Share</a>
       
       
     </footer>
@@ -128,7 +229,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2015/11/28/hello-blog/" data-id="cirtqbvbi0000hpvpc8vznpou" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2015/11/28/hello-blog/" data-id="ciw864jl70001cnvpdjp1s8kc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -170,11 +271,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js" type="text/javascript"></script>
+<script src="/js/script.js"></script>
 
   </div>
 </body>
