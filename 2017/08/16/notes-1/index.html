@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>notes | bookkeeping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="messagingw or who to disploay logged in users broadcast to everyonewall [message] to broadcast the messsagemight use -n to omit senders info broadcast to terminalecho “Lunch” &amp;gt; /dev/pts/1 open runn">
+<meta name="keywords" content="chit-chat,git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="notes">
+<meta property="og:url" content="http://caseycoding.github.io/2017/08/16/notes-1/index.html">
+<meta property="og:site_name" content="bookkeeping">
+<meta property="og:description" content="messagingw or who to disploay logged in users broadcast to everyonewall [message] to broadcast the messsagemight use -n to omit senders info broadcast to terminalecho “Lunch” &amp;gt; /dev/pts/1 open runn">
+<meta property="og:updated_time" content="2017-09-25T23:44:24.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="notes">
+<meta name="twitter:description" content="messagingw or who to disploay logged in users broadcast to everyonewall [message] to broadcast the messsagemight use -n to omit senders info broadcast to terminalecho “Lunch” &amp;gt; /dev/pts/1 open runn">
+  
+    <link rel="alternative" href="/atom.xml" title="bookkeeping" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">bookkeeping</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://caseycoding.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-notes-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/16/notes-1/" class="article-date">
+  <time datetime="2017-08-16T20:31:36.000Z" itemprop="datePublished">2017-08-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      notes
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="messaging"><a href="#messaging" class="headerlink" title="messaging"></a>messaging</h2><p><code>w</code> or <code>who</code> to disploay logged in users</p>
+<h3 id="broadcast-to-everyone"><a href="#broadcast-to-everyone" class="headerlink" title="broadcast to everyone"></a>broadcast to everyone</h3><p><code>wall [message]</code> to broadcast the messsage<br>might use <code>-n</code> to omit senders info</p>
+<h3 id="broadcast-to-terminal"><a href="#broadcast-to-terminal" class="headerlink" title="broadcast to terminal"></a>broadcast to terminal</h3><p>echo “Lunch” &gt; /dev/pts/1</p>
+<h3 id="open-running-chat"><a href="#open-running-chat" class="headerlink" title="open running chat"></a>open running chat</h3><p><code>write [username] [TTY]</code> i.e. <code>write dev pts/0</code></p>
+<p>srcs:<br><a href="https://unix.stackexchange.com/questions/99460/sending-messages-to-another-user" target="_blank" rel="external">https://unix.stackexchange.com/questions/99460/sending-messages-to-another-user</a><br><a href="https://stackoverflow.com/questions/20091681/sending-message-via-terminal-to-another-logged-on-user-bash-programming" target="_blank" rel="external">https://stackoverflow.com/questions/20091681/sending-message-via-terminal-to-another-logged-on-user-bash-programming</a></p>
+<h2 id="cleaning-up-git-branches"><a href="#cleaning-up-git-branches" class="headerlink" title="cleaning up git branches"></a>cleaning up git branches</h2><p><code>git branch -d [name]</code> - to delete<br><code>git branch --merged</code> - to see whats been merged<br><code>git fetch -p &amp;&amp; for branch in</code>git branch -vv | grep ‘: gone]’ | awk ‘{print $1}’<code>; do git branch -d $branch; done</code></p>
+<p>git branch show origin? - todo: look at this with a clear head</p>
+<h2 id="kill-mongo-stuffs"><a href="#kill-mongo-stuffs" class="headerlink" title="kill mongo stuffs"></a>kill mongo stuffs</h2><p><code>db.currentOp()</code><br><code>db.currentOp( { &quot;$ownOps&quot;: true } )</code> - only your own ops?<br><code>db.killOp([the_opid])</code></p>
+<h2 id="hostname"><a href="#hostname" class="headerlink" title="hostname"></a>hostname</h2><p><code>/etc/hostname</code><br><code>/etc/hosts</code></p>
+<h2 id="npm-rb"><a href="#npm-rb" class="headerlink" title="npm rb"></a>npm rb</h2><p>rebuild after changing node version</p>
+<h2 id="vi-delete-all-lines"><a href="#vi-delete-all-lines" class="headerlink" title="vi delete all lines"></a>vi delete all lines</h2><p><code>:1,$d</code><br>src: <a href="https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi" target="_blank" rel="external">https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi</a></p>
+<h2 id="curl-time"><a href="#curl-time" class="headerlink" title="curl time"></a>curl time</h2><p>-w %{time_connect}:%{time_starttransfer}:%{time_total}</p>
+<h2 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h2><p><code>pm2 logs 0 | sed -n &#39;/key/p&#39;</code><br>src: <a href="https://stackoverflow.com/questions/5385234/using-sed-awk-to-print-lines-with-matching-pattern-or-another-matching-pattern" target="_blank" rel="external">https://stackoverflow.com/questions/5385234/using-sed-awk-to-print-lines-with-matching-pattern-or-another-matching-pattern</a></p>
+<p><code>-w %{time_connect}:%{time_starttransfer}:%{time_total}</code></p>
+<h2 id="reload-term"><a href="#reload-term" class="headerlink" title="reload term"></a>reload term</h2><p>source .bashrc</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://caseycoding.github.io/2017/08/16/notes-1/" data-id="cj82izbn80003y19k4rg8jjue" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chit-chat/">chit-chat</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/06/09/weekly-notes-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">notes</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Casey Loren Billman<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

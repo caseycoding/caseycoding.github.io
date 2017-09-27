@@ -5,25 +5,16 @@
   
   <title>notes | bookkeeping</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git semantic differencesgit merge feature (into current)
-git rebase (onto) master
-[remote]/[branch name on remote] = local name for the branch
-subl (Sublime from the command line)ln -sv &amp;quot;/Applica">
+  <meta name="description" content="starting and stopping mongoIf you have mongodb installed via homebrew, homebrew actually has a handy brew services command. To show current running services:brew services listTo start mongodb:brew ser">
 <meta property="og:type" content="article">
 <meta property="og:title" content="notes">
 <meta property="og:url" content="http://caseycoding.github.io/2015/11/30/notes/index.html">
 <meta property="og:site_name" content="bookkeeping">
-<meta property="og:description" content="git semantic differencesgit merge feature (into current)
-git rebase (onto) master
-[remote]/[branch name on remote] = local name for the branch
-subl (Sublime from the command line)ln -sv &amp;quot;/Applica">
-<meta property="og:updated_time" content="2016-12-01T22:42:28.000Z">
+<meta property="og:description" content="starting and stopping mongoIf you have mongodb installed via homebrew, homebrew actually has a handy brew services command. To show current running services:brew services listTo start mongodb:brew ser">
+<meta property="og:updated_time" content="2017-05-20T19:19:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="notes">
-<meta name="twitter:description" content="git semantic differencesgit merge feature (into current)
-git rebase (onto) master
-[remote]/[branch name on remote] = local name for the branch
-subl (Sublime from the command line)ln -sv &amp;quot;/Applica">
+<meta name="twitter:description" content="starting and stopping mongoIf you have mongodb installed via homebrew, homebrew actually has a handy brew services command. To show current running services:brew services listTo start mongodb:brew ser">
   
     <link rel="alternative" href="/atom.xml" title="bookkeeping" type="application/atom+xml">
   
@@ -59,7 +50,7 @@ subl (Sublime from the command line)ln -sv &amp;quot;/Applica">
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://caseycoding.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://caseycoding.github.io"></form>
       </div>
     </div>
   </div>
@@ -87,12 +78,7 @@ subl (Sublime from the command line)ln -sv &amp;quot;/Applica">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="git-semantic-differences"><a href="#git-semantic-differences" class="headerlink" title="git semantic differences"></a>git semantic differences</h2><p>git merge feature (into current)</p>
-<p>git rebase (onto) master</p>
-<p>[remote]/[branch name on remote] = local name for the branch</p>
-<h2 id="subl-Sublime-from-the-command-line"><a href="#subl-Sublime-from-the-command-line" class="headerlink" title="subl (Sublime from the command line)"></a>subl (Sublime from the command line)</h2><p><code>ln -sv &quot;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&quot; /usr/local/bin/subl</code></p>
-<h2 id="Ignore-duplicate-entries-in-bash-history"><a href="#Ignore-duplicate-entries-in-bash-history" class="headerlink" title="Ignore duplicate entries in bash history"></a>Ignore duplicate entries in bash history</h2><p><code>HISTCONTROL=ignoredups</code></p>
-<h2 id="starting-and-stopping-mongo"><a href="#starting-and-stopping-mongo" class="headerlink" title="starting and stopping mongo"></a>starting and stopping mongo</h2><p>If you have mongodb installed via homebrew, homebrew actually has a handy brew services command. To show current running services:<br><code>brew services list</code><br>To start mongodb:<br><code>brew services start mongodb</code><br>To stop mongodb if it’s already running:<br><code>brew services stop mongodb</code></p>
+        <h2 id="starting-and-stopping-mongo"><a href="#starting-and-stopping-mongo" class="headerlink" title="starting and stopping mongo"></a>starting and stopping mongo</h2><p>If you have mongodb installed via homebrew, homebrew actually has a handy brew services command. To show current running services:<br><code>brew services list</code><br>To start mongodb:<br><code>brew services start mongodb</code><br>To stop mongodb if it’s already running:<br><code>brew services stop mongodb</code></p>
 <p>(source)[<a href="http://stackoverflow.com/questions/8495293/whats-a-clean-way-to-stop-mongod-on-mac-os-x" target="_blank" rel="external">http://stackoverflow.com/questions/8495293/whats-a-clean-way-to-stop-mongod-on-mac-os-x</a>]</p>
 <h2 id="yaml"><a href="#yaml" class="headerlink" title="yaml"></a>yaml</h2><p>Basically JSON</p>
 <p><a href="http://www.yaml.org/start.html" target="_blank" rel="external">http://www.yaml.org/start.html</a></p>
@@ -100,11 +86,15 @@ subl (Sublime from the command line)ln -sv &amp;quot;/Applica">
 <h2 id="nano"><a href="#nano" class="headerlink" title="nano"></a>nano</h2><p>delete line:<br>control+c+k<br><code>control-</code> will give you a line prompt<br><code>nano +[line #] filename</code> to open at line</p>
 <h2 id="pi-check-disk-space"><a href="#pi-check-disk-space" class="headerlink" title="pi check disk space"></a>pi check disk space</h2><p>df -Bg</p>
 <h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><p>hexo new [title]</p>
+<p>hexo generate</p>
+<p>hexo server</p>
+<p>hexo deploy #sends pubic to github</p>
+<h2 id="removing-dups-in-history"><a href="#removing-dups-in-history" class="headerlink" title="removing dups in history"></a>removing dups in history</h2><p>add<br><code>HISTCONTROL=erasedups</code><br>in bash_profile</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2015/11/30/notes/" data-id="ciw86s2e70003g7vpwut5b5o6" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2015/11/30/notes/" data-id="cj82izbna0004y19kv31or0ra" class="article-share-link">Share</a>
       
       
     </footer>
@@ -112,6 +102,15 @@ subl (Sublime from the command line)ln -sv &amp;quot;/Applica">
   
     
 <nav id="article-nav">
+  
+    <a href="/2017/05/20/weekly-notes/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          notes
+        
+      </div>
+    </a>
   
   
     <a href="/2015/11/28/hello-blog/" id="article-nav-older" class="article-nav-link-wrap">
@@ -126,22 +125,12 @@ subl (Sublime from the command line)ln -sv &amp;quot;/Applica">
 
 </section>
         
-          <aside id="sidebar">
-  
-    
-  
-    
-  
-    
-  
-</aside>
-        
       </div>
       <footer id="footer">
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 Casey Loren Billman<br>
+      &copy; 2017 Casey Loren Billman<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

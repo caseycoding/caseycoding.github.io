@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>notes | bookkeeping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="notes from the past few months: copy and paste pwd form command line:pwd | pbcopy –&amp;gt; to copy current dirctory to clipboardthen cd $(pbpaste) –&amp;gt; to cd in different terminal Copying when sshed inc">
+<meta name="keywords" content="git,clutch,docker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="notes">
+<meta property="og:url" content="http://caseycoding.github.io/2017/05/20/weekly-notes/index.html">
+<meta property="og:site_name" content="bookkeeping">
+<meta property="og:description" content="notes from the past few months: copy and paste pwd form command line:pwd | pbcopy –&amp;gt; to copy current dirctory to clipboardthen cd $(pbpaste) –&amp;gt; to cd in different terminal Copying when sshed inc">
+<meta property="og:updated_time" content="2017-09-25T23:44:24.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="notes">
+<meta name="twitter:description" content="notes from the past few months: copy and paste pwd form command line:pwd | pbcopy –&amp;gt; to copy current dirctory to clipboardthen cd $(pbpaste) –&amp;gt; to cd in different terminal Copying when sshed inc">
+  
+    <link rel="alternative" href="/atom.xml" title="bookkeeping" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">bookkeeping</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://caseycoding.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-weekly-notes" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/05/20/weekly-notes/" class="article-date">
+  <time datetime="2017-05-20T16:48:59.000Z" itemprop="datePublished">2017-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      notes
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>notes from the past few months:</p>
+<p>copy and paste pwd form command line:<br>pwd | pbcopy –&gt; to copy current dirctory to clipboard<br>then cd $(pbpaste) –&gt; to cd in different terminal</p>
+<h2 id="Copying-when-sshed-in"><a href="#Copying-when-sshed-in" class="headerlink" title="Copying when sshed in"></a>Copying when sshed in</h2><p>commandThatMakesOutput | ssh (hostname) pbcopy<br>need local ssh server there</p>
+<p>Source: <a href="http://stackoverflow.com/questions/1152362/getting-items-on-the-local-clipboard-from-a-remote-ssh-session" target="_blank" rel="external">http://stackoverflow.com/questions/1152362/getting-items-on-the-local-clipboard-from-a-remote-ssh-session</a></p>
+<h2 id="scroll-up-in-terminal"><a href="#scroll-up-in-terminal" class="headerlink" title="scroll up in terminal:"></a>scroll up in terminal:</h2><p>shit + fn upkey (page up)</p>
+<h2 id="iTerm2-command-overlord"><a href="#iTerm2-command-overlord" class="headerlink" title="iTerm2 command overlord"></a>iTerm2 command overlord</h2><p>command + shift + i = send commmand to all terminal windows</p>
+<h2 id="Webstorm"><a href="#Webstorm" class="headerlink" title="Webstorm"></a>Webstorm</h2><p>command 1 = project view<br>command 2 = favorites<br>command 3 = search thingy<br>esc       = return to editor</p>
+<h2 id="Mongo-‘the-mongo-shell-speaks-js’"><a href="#Mongo-‘the-mongo-shell-speaks-js’" class="headerlink" title="Mongo - ‘the mongo shell speaks js’"></a>Mongo - ‘the mongo shell speaks js’</h2><p>decodeURIComponent(query that returns stringified stuff)</p>
+<h2 id="npm-test"><a href="#npm-test" class="headerlink" title="npm test"></a><code>npm test</code></h2><p>exit status 0 is added to the end of npm test calls</p>
+<p>Use <code>; exit 0</code> to replicate this for other npm scripts.</p>
+<p>source of info and link to code source: <a href="http://stackoverflow.com/questions/23286017/npm-error-elifecycle-while-running-the-test" target="_blank" rel="external">http://stackoverflow.com/questions/23286017/npm-error-elifecycle-while-running-the-test</a></p>
+<h2 id="grep-files-with-regex"><a href="#grep-files-with-regex" class="headerlink" title="grep files with regex"></a><code>grep</code> files with regex</h2><p>grep -c -F /*<em><br>grep  ^\ </em>function</p>
+<p>grep options<br>-c count<br>-F fixed string</p>
+<p>control-R to search command history!!</p>
+<h2 id="Broken-Git-Fetch"><a href="#Broken-Git-Fetch" class="headerlink" title="Broken Git Fetch?"></a>Broken Git Fetch?</h2><p><code>git config remote.origin.fetch &quot;+refs/heads/*:refs/remotes/origin/*&quot;</code></p>
+<h2 id="Running-in-background"><a href="#Running-in-background" class="headerlink" title="Running in background"></a>Running in background</h2><p>node server.js &gt;std.txt  2&gt;err.txt &amp;</p>
+<p>src: <a href="https://kb.iu.edu/d/afnz" target="_blank" rel="external">https://kb.iu.edu/d/afnz</a></p>
+<h2 id="Timestamp-in-name"><a href="#Timestamp-in-name" class="headerlink" title="Timestamp in name"></a>Timestamp in name</h2><p>$(date +%s)</p>
+<h2 id="What-does-etc-stand-for"><a href="#What-does-etc-stand-for" class="headerlink" title="What does /etc stand for?"></a>What does /etc stand for?</h2><p><a href="http://www.aboutlinux.info/2007/03/what-does-etc-stands-for-in-linuxunix.html" target="_blank" rel="external">http://www.aboutlinux.info/2007/03/what-does-etc-stands-for-in-linuxunix.html</a></p>
+<h2 id="JSON-Pretty-print-curl-response"><a href="#JSON-Pretty-print-curl-response" class="headerlink" title="JSON Pretty print curl response:"></a>JSON Pretty print curl response:</h2><p>json_pp</p>
+<h2 id="Shhh-curl-shhh"><a href="#Shhh-curl-shhh" class="headerlink" title="Shhh curl shhh"></a>Shhh curl shhh</h2><p>-s flag prevents process display</p>
+<p>src: <a href="http://stackoverflow.com/questions/7373752/how-do-i-get-curl-to-not-show-the-progress-bar" target="_blank" rel="external">http://stackoverflow.com/questions/7373752/how-do-i-get-curl-to-not-show-the-progress-bar</a></p>
+<h2 id="PM2"><a href="#PM2" class="headerlink" title="PM2"></a>PM2</h2><p>delete - start with a set environment variables<br><code>pm2 delete 0</code><br><code>pm2 start app.json --only num2</code></p>
+<p>clean logs<br><code>pm2 logs [--raw] 0</code></p>
+<h2 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h2><p><code>ssh-copy-id [username]@[addresss]</code></p>
+<p>src: <a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys" target="_blank" rel="external">https://help.ubuntu.com/community/SSH/OpenSSH/Keys</a></p>
+<h2 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h2><p>npm i -S -&gt; save as dep  - this is now the default behavior in npm@5<br>npm i -D -&gt; save as dev dep<br>npm repo -&gt; go to repo<br>npm run -&gt; what can i run?</p>
+<p>src: <a href="https://medium.com/@adiramsalem/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e" target="_blank" rel="external">https://medium.com/@adiramsalem/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e</a></p>
+<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p><code>git reset HEAD~</code></p>
+<p>src: <a href="http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git" target="_blank" rel="external">http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git</a></p>
+<h2 id="vi-line-numbers"><a href="#vi-line-numbers" class="headerlink" title="vi line numbers"></a>vi line numbers</h2><p><code>set number</code><br><code>:44</code></p>
+<h2 id="docker-port-publishing"><a href="#docker-port-publishing" class="headerlink" title="docker port publishing"></a>docker port publishing</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ docker run -p 127.0.0.1:80:8080 ubuntu bash</div></pre></td></tr></table></figure>
+<p>This binds port 8080 of the container to port 80 on 127.0.0.1 of the host machine.<br>A.k.a <code>-p [host]:[container]</code>. host:container, host:container got it.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://caseycoding.github.io/2017/05/20/weekly-notes/" data-id="cj82izbnj0007y19kv8i6k5pf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clutch/">clutch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/06/09/weekly-notes-1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          notes
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/11/30/notes/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">notes</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Casey Loren Billman<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -46,13 +46,211 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://caseycoding.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://caseycoding.github.io"></form>
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-notes-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/16/notes-1/" class="article-date">
+  <time datetime="2017-08-16T20:31:36.000Z" itemprop="datePublished">2017-08-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/16/notes-1/">notes</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="messaging"><a href="#messaging" class="headerlink" title="messaging"></a>messaging</h2><p><code>w</code> or <code>who</code> to disploay logged in users</p>
+<h3 id="broadcast-to-everyone"><a href="#broadcast-to-everyone" class="headerlink" title="broadcast to everyone"></a>broadcast to everyone</h3><p><code>wall [message]</code> to broadcast the messsage<br>might use <code>-n</code> to omit senders info</p>
+<h3 id="broadcast-to-terminal"><a href="#broadcast-to-terminal" class="headerlink" title="broadcast to terminal"></a>broadcast to terminal</h3><p>echo “Lunch” &gt; /dev/pts/1</p>
+<h3 id="open-running-chat"><a href="#open-running-chat" class="headerlink" title="open running chat"></a>open running chat</h3><p><code>write [username] [TTY]</code> i.e. <code>write dev pts/0</code></p>
+<p>srcs:<br><a href="https://unix.stackexchange.com/questions/99460/sending-messages-to-another-user" target="_blank" rel="external">https://unix.stackexchange.com/questions/99460/sending-messages-to-another-user</a><br><a href="https://stackoverflow.com/questions/20091681/sending-message-via-terminal-to-another-logged-on-user-bash-programming" target="_blank" rel="external">https://stackoverflow.com/questions/20091681/sending-message-via-terminal-to-another-logged-on-user-bash-programming</a></p>
+<h2 id="cleaning-up-git-branches"><a href="#cleaning-up-git-branches" class="headerlink" title="cleaning up git branches"></a>cleaning up git branches</h2><p><code>git branch -d [name]</code> - to delete<br><code>git branch --merged</code> - to see whats been merged<br><code>git fetch -p &amp;&amp; for branch in</code>git branch -vv | grep ‘: gone]’ | awk ‘{print $1}’<code>; do git branch -d $branch; done</code></p>
+<p>git branch show origin? - todo: look at this with a clear head</p>
+<h2 id="kill-mongo-stuffs"><a href="#kill-mongo-stuffs" class="headerlink" title="kill mongo stuffs"></a>kill mongo stuffs</h2><p><code>db.currentOp()</code><br><code>db.currentOp( { &quot;$ownOps&quot;: true } )</code> - only your own ops?<br><code>db.killOp([the_opid])</code></p>
+<h2 id="hostname"><a href="#hostname" class="headerlink" title="hostname"></a>hostname</h2><p><code>/etc/hostname</code><br><code>/etc/hosts</code></p>
+<h2 id="npm-rb"><a href="#npm-rb" class="headerlink" title="npm rb"></a>npm rb</h2><p>rebuild after changing node version</p>
+<h2 id="vi-delete-all-lines"><a href="#vi-delete-all-lines" class="headerlink" title="vi delete all lines"></a>vi delete all lines</h2><p><code>:1,$d</code><br>src: <a href="https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi" target="_blank" rel="external">https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi</a></p>
+<h2 id="curl-time"><a href="#curl-time" class="headerlink" title="curl time"></a>curl time</h2><p>-w %{time_connect}:%{time_starttransfer}:%{time_total}</p>
+<h2 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h2><p><code>pm2 logs 0 | sed -n &#39;/key/p&#39;</code><br>src: <a href="https://stackoverflow.com/questions/5385234/using-sed-awk-to-print-lines-with-matching-pattern-or-another-matching-pattern" target="_blank" rel="external">https://stackoverflow.com/questions/5385234/using-sed-awk-to-print-lines-with-matching-pattern-or-another-matching-pattern</a></p>
+<p><code>-w %{time_connect}:%{time_starttransfer}:%{time_total}</code></p>
+<h2 id="reload-term"><a href="#reload-term" class="headerlink" title="reload term"></a>reload term</h2><p>source .bashrc</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://caseycoding.github.io/2017/08/16/notes-1/" data-id="cj82izbn80003y19k4rg8jjue" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chit-chat/">chit-chat</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-weekly-notes-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/09/weekly-notes-1/" class="article-date">
+  <time datetime="2017-06-09T15:19:53.000Z" itemprop="datePublished">2017-06-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/09/weekly-notes-1/">notes</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>more notes from the past few months:</p>
+<h2 id="webstorm-minimap"><a href="#webstorm-minimap" class="headerlink" title="webstorm minimap"></a>webstorm minimap</h2><p>CodeGlance plugin</p>
+<h2 id="shell-notes"><a href="#shell-notes" class="headerlink" title="shell notes"></a>shell notes</h2><p>use cmd+i to set the ‘badge’ to something useful</p>
+<h2 id="exit-all-ssh-sessions"><a href="#exit-all-ssh-sessions" class="headerlink" title="exit all ssh sessions"></a>exit all ssh sessions</h2><p><code>~.</code></p>
+<p>src = <a href="https://unix.stackexchange.com/questions/41682/exit-out-of-all-ssh-connections-in-one-command-and-close-putty" target="_blank" rel="external">https://unix.stackexchange.com/questions/41682/exit-out-of-all-ssh-connections-in-one-command-and-close-putty</a></p>
+<h2 id="vi-find"><a href="#vi-find" class="headerlink" title="vi find"></a>vi find</h2><p>/string Search forward for string<br>?string Search back for string<br>n Search for next instance of string<br>N Search for previous instance of string</p>
+<h2 id="curl-proxy"><a href="#curl-proxy" class="headerlink" title="curl proxy"></a>curl proxy</h2><p>-x, –proxy <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#91;&#112;&#114;&#x6f;&#116;&#111;&#99;&#111;&#108;&#58;&#47;&#x2f;&#x5d;&#91;&#117;&#x73;&#101;&#x72;&#58;&#x70;&#97;&#115;&#115;&#119;&#x6f;&#114;&#x64;&#x40;&#93;&#x70;&#114;&#111;&#120;&#121;&#x68;&#x6f;&#115;&#116;&#x5b;&#58;&#x70;&#111;&#114;&#x74;&#93;">&#91;&#112;&#114;&#x6f;&#116;&#111;&#99;&#111;&#108;&#58;&#47;&#x2f;&#x5d;&#91;&#117;&#x73;&#101;&#x72;&#58;&#x70;&#97;&#115;&#115;&#119;&#x6f;&#114;&#x64;&#x40;&#93;&#x70;&#114;&#111;&#120;&#121;&#x68;&#x6f;&#115;&#116;&#x5b;&#58;&#x70;&#111;&#114;&#x74;&#93;</a></p>
+<h2 id="find-and-kill-that-process"><a href="#find-and-kill-that-process" class="headerlink" title="find (and kill) that process"></a>find (and kill) that process</h2><p>ps -A | less<br>ps -A | grep firefox</p>
+<p>kill 31098<br>kill -15 (SIGTERM) 31098</p>
+<h2 id="webstorm"><a href="#webstorm" class="headerlink" title="webstorm"></a>webstorm</h2><p><em>scratch page</em><br>shift + command + n</p>
+<p><em>search everywhere</em><br>shift + shift + shift</p>
+<h2 id="cd-back"><a href="#cd-back" class="headerlink" title="cd back"></a>cd back</h2><p><code>cd -</code></p>
+<h2 id="protobuf"><a href="#protobuf" class="headerlink" title="protobuf"></a>protobuf</h2><p>If you are running into an error with node-gyp regarding protobuf when running npm install:<br>brew install protobuf<br>brew install pkg-config</p>
+<h2 id="send-output-to-file-and-console"><a href="#send-output-to-file-and-console" class="headerlink" title="send output to file and console"></a>send output to file and console</h2><p><code>tee</code> it up!</p>
+<h2 id="color-output"><a href="#color-output" class="headerlink" title="color output"></a>color output</h2><p>console.log(‘\x1b[36m%s\x1b[0m’, ‘I am cyan’);<br><a href="https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color" target="_blank" rel="external">https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color</a></p>
+<h2 id="mongo"><a href="#mongo" class="headerlink" title="mongo"></a>mongo</h2><p><code>db.collection.find().limit(1).sort({$natural:-1})</code><br><code>.pretty()</code> on json payloads to make them…pretty.<br><code>.explain(&#39;executionStats&#39;)</code></p>
+<p><code>db.stuff.find( { foo: /^bar$/i } )</code><br><a href="https://stackoverflow.com/questions/1863399/mongodb-is-it-possible-to-make-a-case-insensitive-query" target="_blank" rel="external">https://stackoverflow.com/questions/1863399/mongodb-is-it-possible-to-make-a-case-insensitive-query</a></p>
+<p>db.currentOp( { “$ownOps”: true } )<br>db.killOp(the_opid)</p>
+<h2 id="remove-env-vars"><a href="#remove-env-vars" class="headerlink" title="remove env vars"></a>remove env vars</h2><p><code>unset &lt;var&gt;</code></p>
+<h2 id="vi-line-moving"><a href="#vi-line-moving" class="headerlink" title="vi line moving"></a>vi line moving</h2><p>Therefore, dd p / dd k P are common commands to move a line one down / up.</p>
+<p>src: <a href="https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line" target="_blank" rel="external">https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line</a></p>
+<p><code>yy</code> to yank<br><code>p</code> to paste after<br><code>P</code> to paste before<br><code>u</code> to undo</p>
+<h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h2><p>multiples<br><code>grep -e foo -e bar *.txt</code></p>
+<p>extra spaces<br>-A after<br>-B before<br>-C both</p>
+<p>src: <a href="https://unix.stackexchange.com/questions/37313/how-do-i-grep-for-multiple-patterns" target="_blank" rel="external">https://unix.stackexchange.com/questions/37313/how-do-i-grep-for-multiple-patterns</a></p>
+<h2 id="pm2"><a href="#pm2" class="headerlink" title="pm2"></a>pm2</h2><h4 id="watch"><a href="#watch" class="headerlink" title="watch"></a>watch</h4><p>–watch [paths]<br>–ignore-watch <folders|files><br>note: need to figure out how to correctly pass in ignored files</folders|files></p>
+<p>using config is easier</p>
+<h4 id="node-args"><a href="#node-args" class="headerlink" title="node args"></a>node args</h4><p>“node_args”: “–prof”</p>
+<h2 id="jump-words-in-iterm"><a href="#jump-words-in-iterm" class="headerlink" title="jump words in iterm"></a>jump words in iterm</h2><p><a href="https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x" target="_blank" rel="external">https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x</a></p>
+<h2 id="finding-where-something-is-aliased"><a href="#finding-where-something-is-aliased" class="headerlink" title="finding where something is aliased"></a>finding where something is aliased</h2><p><code>which ls</code><br>ls: aliased to ls -G</p>
+<p><code>grep -r &#39;ls -G&#39; ~</code><br>src (2nd answer down): <a href="https://stackoverflow.com/questions/2614403/how-to-find-out-where-alias-in-the-bash-sense-is-defined-when-running-terminal" target="_blank" rel="external">https://stackoverflow.com/questions/2614403/how-to-find-out-where-alias-in-the-bash-sense-is-defined-when-running-terminal</a></p>
+<p>to override<br><code>command ls</code></p>
+<h2 id="ping-to-get-ip-of-url"><a href="#ping-to-get-ip-of-url" class="headerlink" title="ping to get ip of url"></a>ping to get ip of url</h2><h2 id="windows-ssh"><a href="#windows-ssh" class="headerlink" title="windows ssh"></a>windows ssh</h2><p>eval <code>ssh-agent -s</code><br>ssh-add -l<br>ssh-add .ssh/your_id #not the pub one</p>
+<h2 id="webstorm-reformat-code"><a href="#webstorm-reformat-code" class="headerlink" title="webstorm reformat code"></a>webstorm reformat code</h2><p><code>⌥+⌘+L</code><br>option + command + L</p>
+<h2 id="comment-out-in-vim"><a href="#comment-out-in-vim" class="headerlink" title="comment out in vim"></a>comment out in vim</h2><p>ctrl+v to enter visual block<br>x to delete selection<br>shift+I to enter edit mode on multiple lines</p>
+<p>src: <a href="https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim" target="_blank" rel="external">https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://caseycoding.github.io/2017/06/09/weekly-notes-1/" data-id="cj82izbnf0006y19kv2wdhvo2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clutch/">clutch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mongo/">mongo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-weekly-notes" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/05/20/weekly-notes/" class="article-date">
+  <time datetime="2017-05-20T16:48:59.000Z" itemprop="datePublished">2017-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/05/20/weekly-notes/">notes</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>notes from the past few months:</p>
+<p>copy and paste pwd form command line:<br>pwd | pbcopy –&gt; to copy current dirctory to clipboard<br>then cd $(pbpaste) –&gt; to cd in different terminal</p>
+<h2 id="Copying-when-sshed-in"><a href="#Copying-when-sshed-in" class="headerlink" title="Copying when sshed in"></a>Copying when sshed in</h2><p>commandThatMakesOutput | ssh (hostname) pbcopy<br>need local ssh server there</p>
+<p>Source: <a href="http://stackoverflow.com/questions/1152362/getting-items-on-the-local-clipboard-from-a-remote-ssh-session" target="_blank" rel="external">http://stackoverflow.com/questions/1152362/getting-items-on-the-local-clipboard-from-a-remote-ssh-session</a></p>
+<h2 id="scroll-up-in-terminal"><a href="#scroll-up-in-terminal" class="headerlink" title="scroll up in terminal:"></a>scroll up in terminal:</h2><p>shit + fn upkey (page up)</p>
+<h2 id="iTerm2-command-overlord"><a href="#iTerm2-command-overlord" class="headerlink" title="iTerm2 command overlord"></a>iTerm2 command overlord</h2><p>command + shift + i = send commmand to all terminal windows</p>
+<h2 id="Webstorm"><a href="#Webstorm" class="headerlink" title="Webstorm"></a>Webstorm</h2><p>command 1 = project view<br>command 2 = favorites<br>command 3 = search thingy<br>esc       = return to editor</p>
+<h2 id="Mongo-‘the-mongo-shell-speaks-js’"><a href="#Mongo-‘the-mongo-shell-speaks-js’" class="headerlink" title="Mongo - ‘the mongo shell speaks js’"></a>Mongo - ‘the mongo shell speaks js’</h2><p>decodeURIComponent(query that returns stringified stuff)</p>
+<h2 id="npm-test"><a href="#npm-test" class="headerlink" title="npm test"></a><code>npm test</code></h2><p>exit status 0 is added to the end of npm test calls</p>
+<p>Use <code>; exit 0</code> to replicate this for other npm scripts.</p>
+<p>source of info and link to code source: <a href="http://stackoverflow.com/questions/23286017/npm-error-elifecycle-while-running-the-test" target="_blank" rel="external">http://stackoverflow.com/questions/23286017/npm-error-elifecycle-while-running-the-test</a></p>
+<h2 id="grep-files-with-regex"><a href="#grep-files-with-regex" class="headerlink" title="grep files with regex"></a><code>grep</code> files with regex</h2><p>grep -c -F /*<em><br>grep  ^\ </em>function</p>
+<p>grep options<br>-c count<br>-F fixed string</p>
+<p>control-R to search command history!!</p>
+<h2 id="Broken-Git-Fetch"><a href="#Broken-Git-Fetch" class="headerlink" title="Broken Git Fetch?"></a>Broken Git Fetch?</h2><p><code>git config remote.origin.fetch &quot;+refs/heads/*:refs/remotes/origin/*&quot;</code></p>
+<h2 id="Running-in-background"><a href="#Running-in-background" class="headerlink" title="Running in background"></a>Running in background</h2><p>node server.js &gt;std.txt  2&gt;err.txt &amp;</p>
+<p>src: <a href="https://kb.iu.edu/d/afnz" target="_blank" rel="external">https://kb.iu.edu/d/afnz</a></p>
+<h2 id="Timestamp-in-name"><a href="#Timestamp-in-name" class="headerlink" title="Timestamp in name"></a>Timestamp in name</h2><p>$(date +%s)</p>
+<h2 id="What-does-etc-stand-for"><a href="#What-does-etc-stand-for" class="headerlink" title="What does /etc stand for?"></a>What does /etc stand for?</h2><p><a href="http://www.aboutlinux.info/2007/03/what-does-etc-stands-for-in-linuxunix.html" target="_blank" rel="external">http://www.aboutlinux.info/2007/03/what-does-etc-stands-for-in-linuxunix.html</a></p>
+<h2 id="JSON-Pretty-print-curl-response"><a href="#JSON-Pretty-print-curl-response" class="headerlink" title="JSON Pretty print curl response:"></a>JSON Pretty print curl response:</h2><p>json_pp</p>
+<h2 id="Shhh-curl-shhh"><a href="#Shhh-curl-shhh" class="headerlink" title="Shhh curl shhh"></a>Shhh curl shhh</h2><p>-s flag prevents process display</p>
+<p>src: <a href="http://stackoverflow.com/questions/7373752/how-do-i-get-curl-to-not-show-the-progress-bar" target="_blank" rel="external">http://stackoverflow.com/questions/7373752/how-do-i-get-curl-to-not-show-the-progress-bar</a></p>
+<h2 id="PM2"><a href="#PM2" class="headerlink" title="PM2"></a>PM2</h2><p>delete - start with a set environment variables<br><code>pm2 delete 0</code><br><code>pm2 start app.json --only num2</code></p>
+<p>clean logs<br><code>pm2 logs [--raw] 0</code></p>
+<h2 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h2><p><code>ssh-copy-id [username]@[addresss]</code></p>
+<p>src: <a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys" target="_blank" rel="external">https://help.ubuntu.com/community/SSH/OpenSSH/Keys</a></p>
+<h2 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h2><p>npm i -S -&gt; save as dep  - this is now the default behavior in npm@5<br>npm i -D -&gt; save as dev dep<br>npm repo -&gt; go to repo<br>npm run -&gt; what can i run?</p>
+<p>src: <a href="https://medium.com/@adiramsalem/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e" target="_blank" rel="external">https://medium.com/@adiramsalem/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e</a></p>
+<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p><code>git reset HEAD~</code></p>
+<p>src: <a href="http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git" target="_blank" rel="external">http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git</a></p>
+<h2 id="vi-line-numbers"><a href="#vi-line-numbers" class="headerlink" title="vi line numbers"></a>vi line numbers</h2><p><code>set number</code><br><code>:44</code></p>
+<h2 id="docker-port-publishing"><a href="#docker-port-publishing" class="headerlink" title="docker port publishing"></a>docker port publishing</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ docker run -p 127.0.0.1:80:8080 ubuntu bash</div></pre></td></tr></table></figure>
+<p>This binds port 8080 of the container to port 80 on 127.0.0.1 of the host machine.<br>A.k.a <code>-p [host]:[container]</code>. host:container, host:container got it.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://caseycoding.github.io/2017/05/20/weekly-notes/" data-id="cj82izbnj0007y19kv8i6k5pf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clutch/">clutch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-notes" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -76,12 +274,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="git-semantic-differences"><a href="#git-semantic-differences" class="headerlink" title="git semantic differences"></a>git semantic differences</h2><p>git merge feature (into current)</p>
-<p>git rebase (onto) master</p>
-<p>[remote]/[branch name on remote] = local name for the branch</p>
-<h2 id="subl-Sublime-from-the-command-line"><a href="#subl-Sublime-from-the-command-line" class="headerlink" title="subl (Sublime from the command line)"></a>subl (Sublime from the command line)</h2><p><code>ln -sv &quot;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&quot; /usr/local/bin/subl</code></p>
-<h2 id="Ignore-duplicate-entries-in-bash-history"><a href="#Ignore-duplicate-entries-in-bash-history" class="headerlink" title="Ignore duplicate entries in bash history"></a>Ignore duplicate entries in bash history</h2><p><code>HISTCONTROL=ignoredups</code></p>
-<h2 id="starting-and-stopping-mongo"><a href="#starting-and-stopping-mongo" class="headerlink" title="starting and stopping mongo"></a>starting and stopping mongo</h2><p>If you have mongodb installed via homebrew, homebrew actually has a handy brew services command. To show current running services:<br><code>brew services list</code><br>To start mongodb:<br><code>brew services start mongodb</code><br>To stop mongodb if it’s already running:<br><code>brew services stop mongodb</code></p>
+        <h2 id="starting-and-stopping-mongo"><a href="#starting-and-stopping-mongo" class="headerlink" title="starting and stopping mongo"></a>starting and stopping mongo</h2><p>If you have mongodb installed via homebrew, homebrew actually has a handy brew services command. To show current running services:<br><code>brew services list</code><br>To start mongodb:<br><code>brew services start mongodb</code><br>To stop mongodb if it’s already running:<br><code>brew services stop mongodb</code></p>
 <p>(source)[<a href="http://stackoverflow.com/questions/8495293/whats-a-clean-way-to-stop-mongod-on-mac-os-x" target="_blank" rel="external">http://stackoverflow.com/questions/8495293/whats-a-clean-way-to-stop-mongod-on-mac-os-x</a>]</p>
 <h2 id="yaml"><a href="#yaml" class="headerlink" title="yaml"></a>yaml</h2><p>Basically JSON</p>
 <p><a href="http://www.yaml.org/start.html" target="_blank" rel="external">http://www.yaml.org/start.html</a></p>
@@ -89,11 +282,15 @@
 <h2 id="nano"><a href="#nano" class="headerlink" title="nano"></a>nano</h2><p>delete line:<br>control+c+k<br><code>control-</code> will give you a line prompt<br><code>nano +[line #] filename</code> to open at line</p>
 <h2 id="pi-check-disk-space"><a href="#pi-check-disk-space" class="headerlink" title="pi check disk space"></a>pi check disk space</h2><p>df -Bg</p>
 <h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><p>hexo new [title]</p>
+<p>hexo generate</p>
+<p>hexo server</p>
+<p>hexo deploy #sends pubic to github</p>
+<h2 id="removing-dups-in-history"><a href="#removing-dups-in-history" class="headerlink" title="removing dups in history"></a>removing dups in history</h2><p>add<br><code>HISTCONTROL=erasedups</code><br>in bash_profile</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2015/11/30/notes/" data-id="ciw86s2e70003g7vpwut5b5o6" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2015/11/30/notes/" data-id="cj82izbna0004y19kv31or0ra" class="article-share-link">Share</a>
       
       
     </footer>
@@ -131,7 +328,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2015/11/28/hello-blog/" data-id="ciw86s2e50002g7vp6nyi9nbl" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2015/11/28/hello-blog/" data-id="cj82izbn60002y19kl3c4apra" class="article-share-link">Share</a>
       
       
     </footer>
@@ -144,22 +341,12 @@
   
 </section>
         
-          <aside id="sidebar">
-  
-    
-  
-    
-  
-    
-  
-</aside>
-        
       </div>
       <footer id="footer">
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 Casey Loren Billman<br>
+      &copy; 2017 Casey Loren Billman<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
