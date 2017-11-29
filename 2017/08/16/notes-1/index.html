@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://caseycoding.github.io/2017/08/16/notes-1/index.html">
 <meta property="og:site_name" content="bookkeeping">
 <meta property="og:description" content="messagingw or who to disploay logged in users broadcast to everyonewall [message] to broadcast the messsagemight use -n to omit senders info broadcast to terminalecho “Lunch” &amp;gt; /dev/pts/1 open runn">
-<meta property="og:updated_time" content="2017-09-25T23:44:24.000Z">
+<meta property="og:updated_time" content="2017-11-29T03:19:07.341Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="notes">
 <meta name="twitter:description" content="messagingw or who to disploay logged in users broadcast to everyonewall [message] to broadcast the messsagemight use -n to omit senders info broadcast to terminalecho “Lunch” &amp;gt; /dev/pts/1 open runn">
@@ -82,23 +82,31 @@
         <h2 id="messaging"><a href="#messaging" class="headerlink" title="messaging"></a>messaging</h2><p><code>w</code> or <code>who</code> to disploay logged in users</p>
 <h3 id="broadcast-to-everyone"><a href="#broadcast-to-everyone" class="headerlink" title="broadcast to everyone"></a>broadcast to everyone</h3><p><code>wall [message]</code> to broadcast the messsage<br>might use <code>-n</code> to omit senders info</p>
 <h3 id="broadcast-to-terminal"><a href="#broadcast-to-terminal" class="headerlink" title="broadcast to terminal"></a>broadcast to terminal</h3><p>echo “Lunch” &gt; /dev/pts/1</p>
-<h3 id="open-running-chat"><a href="#open-running-chat" class="headerlink" title="open running chat"></a>open running chat</h3><p><code>write [username] [TTY]</code> i.e. <code>write dev pts/0</code></p>
+<h3 id="open-running-chat"><a href="#open-running-chat" class="headerlink" title="open running chat"></a>open running chat</h3><p><code>write [username] [TTY]</code> e.g. <code>write dev pts/0</code></p>
 <p>srcs:<br><a href="https://unix.stackexchange.com/questions/99460/sending-messages-to-another-user" target="_blank" rel="external">https://unix.stackexchange.com/questions/99460/sending-messages-to-another-user</a><br><a href="https://stackoverflow.com/questions/20091681/sending-message-via-terminal-to-another-logged-on-user-bash-programming" target="_blank" rel="external">https://stackoverflow.com/questions/20091681/sending-message-via-terminal-to-another-logged-on-user-bash-programming</a></p>
-<h2 id="cleaning-up-git-branches"><a href="#cleaning-up-git-branches" class="headerlink" title="cleaning up git branches"></a>cleaning up git branches</h2><p><code>git branch -d [name]</code> - to delete<br><code>git branch --merged</code> - to see whats been merged<br><code>git fetch -p &amp;&amp; for branch in</code>git branch -vv | grep ‘: gone]’ | awk ‘{print $1}’<code>; do git branch -d $branch; done</code></p>
-<p>git branch show origin? - todo: look at this with a clear head</p>
+<h2 id="cleaning-up-git-branches"><a href="#cleaning-up-git-branches" class="headerlink" title="cleaning up git branches"></a>cleaning up git branches</h2><p><code>git branch -d [name]</code> - to delete<br><code>git branch --merged</code> - to see whats been merged<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git fetch -p &amp;&amp; <span class="keyword">for</span> branch <span class="keyword">in</span> `git branch -vv | grep <span class="string">': gone]'</span> | awk <span class="string">'&#123;print $1&#125;'</span>`; <span class="keyword">do</span> git branch -d <span class="variable">$branch</span>; <span class="keyword">done</span></div></pre></td></tr></table></figure></p>
+<p><code>git branch show origin</code>? - todo: look at this with a clear head<br>^don’t do this</p>
 <h2 id="kill-mongo-stuffs"><a href="#kill-mongo-stuffs" class="headerlink" title="kill mongo stuffs"></a>kill mongo stuffs</h2><p><code>db.currentOp()</code><br><code>db.currentOp( { &quot;$ownOps&quot;: true } )</code> - only your own ops?<br><code>db.killOp([the_opid])</code></p>
 <h2 id="hostname"><a href="#hostname" class="headerlink" title="hostname"></a>hostname</h2><p><code>/etc/hostname</code><br><code>/etc/hosts</code></p>
-<h2 id="npm-rb"><a href="#npm-rb" class="headerlink" title="npm rb"></a>npm rb</h2><p>rebuild after changing node version</p>
 <h2 id="vi-delete-all-lines"><a href="#vi-delete-all-lines" class="headerlink" title="vi delete all lines"></a>vi delete all lines</h2><p><code>:1,$d</code><br>src: <a href="https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi" target="_blank" rel="external">https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi</a></p>
-<h2 id="curl-time"><a href="#curl-time" class="headerlink" title="curl time"></a>curl time</h2><p>-w %{time_connect}:%{time_starttransfer}:%{time_total}</p>
+<h2 id="curl-time"><a href="#curl-time" class="headerlink" title="curl time"></a>curl time</h2><p><code>-w %{time_connect}:%{time_starttransfer}:%{time_total}</code><br><code>-w &#39;\n%{time_connect}:%{time_starttransfer}:%{time_total} size: %{size_download}\n&#39;</code></p>
 <h2 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h2><p><code>pm2 logs 0 | sed -n &#39;/key/p&#39;</code><br>src: <a href="https://stackoverflow.com/questions/5385234/using-sed-awk-to-print-lines-with-matching-pattern-or-another-matching-pattern" target="_blank" rel="external">https://stackoverflow.com/questions/5385234/using-sed-awk-to-print-lines-with-matching-pattern-or-another-matching-pattern</a></p>
-<p><code>-w %{time_connect}:%{time_starttransfer}:%{time_total}</code></p>
+<p><code>sed -n -e &#39;/pattern1/p&#39;</code> for linux?</p>
 <h2 id="reload-term"><a href="#reload-term" class="headerlink" title="reload term"></a>reload term</h2><p>source .bashrc</p>
+<h2 id="bash"><a href="#bash" class="headerlink" title="bash"></a>bash</h2><p><code>sleep 5</code><br><code>!!</code> - entire previous command<br><code>!$</code> - last<br><code>!^</code> - first<br><code>!:3</code> third<br><code>!*</code> all</p>
+<p><code>date +&quot;%B&quot;</code> get date</p>
+<h2 id="nodemon-exec-for-compiling-and-or-linting"><a href="#nodemon-exec-for-compiling-and-or-linting" class="headerlink" title="nodemon --exec for compiling and/or linting"></a><code>nodemon --exec</code> for compiling and/or linting</h2><p><code>nodemon --exec &#39;javac SomeClass.java &amp;&amp; java SomeClass&#39; ./SomeClass</code></p>
+<h2 id="jq"><a href="#jq" class="headerlink" title="jq"></a>jq</h2><p><code>jq &#39;.data.key.term.otherKey&#39;</code></p>
+<h2 id="create-mongo-timestamp-from-1hr-ago-in-bash"><a href="#create-mongo-timestamp-from-1hr-ago-in-bash" class="headerlink" title="create mongo timestamp from 1hr ago in bash"></a>create mongo timestamp from 1hr ago in bash</h2><p><code>printf &#39;ObjectId(&quot;%x0000000000000000&quot;)\n&#39; $(date -v-60M -u +%s)</code></p>
+<h2 id="bash-timestamp"><a href="#bash-timestamp" class="headerlink" title="bash timestamp"></a>bash timestamp</h2><p><code>SECONDS=0</code><br>do some work<br><code>duration=$SECONDS</code><br><code>echo &quot;$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed.&quot;</code></p>
+<h2 id="node-memory-testing"><a href="#node-memory-testing" class="headerlink" title="node memory testing"></a>node memory testing</h2><p>kill -s SIGUSR1 node_pid</p>
+<h2 id="looking-at-tags"><a href="#looking-at-tags" class="headerlink" title="looking at tags"></a>looking at tags</h2><p>git describe –tags</p>
+<h2 id="find-and-replace"><a href="#find-and-replace" class="headerlink" title="find and replace"></a>find and replace</h2><p>osx:<br><code>find . -type f -name &#39;*.csv&#39; -exec sed -i &#39;&#39; &quot;s/find/replace/g&quot; {} \;</code><br>linux:<br><code>find . -type f -name &#39;*.csv&#39; -exec sed -i &quot;s/{find}/{replace}/g&quot; {} \;</code></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2017/08/16/notes-1/" data-id="cj82izbn80003y19k4rg8jjue" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2017/08/16/notes-1/" data-id="cjakhgqqj0005kk9kui1q757e" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chit-chat/">chit-chat</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
@@ -108,6 +116,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2017/11/26/general-tools/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          general tools
+        
+      </div>
+    </a>
   
   
     <a href="/2017/06/09/weekly-notes-1/" id="article-nav-older" class="article-nav-link-wrap">
