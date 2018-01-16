@@ -54,6 +54,87 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-notes-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/02/notes-2/" class="article-date">
+  <time datetime="2018-01-02T17:26:07.000Z" itemprop="datePublished">2018-01-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/02/notes-2/">notes</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="work-notes-by-month"><a href="#work-notes-by-month" class="headerlink" title="work notes by month"></a>work notes by month</h2><figure class="highlight mel"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">notes() &#123;</div><div class="line">	subl ~/work/notes/$(<span class="keyword">date</span> +%B)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="documentation-tools"><a href="#documentation-tools" class="headerlink" title="documentation tools"></a>documentation tools</h2><p><a href="http://stable.ascii-flow.appspot.com/" target="_blank" rel="external">ascii flow charting</a><br>obviously <a href="draw.io">draw.io</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://caseycoding.github.io/2018/01/02/notes-2/" data-id="cjch3rw6o0005o89kx4xc8mzc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/taking-better-notes/">taking better notes</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-general-tools" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/26/general-tools/" class="article-date">
+  <time datetime="2017-11-26T09:31:00.000Z" itemprop="datePublished">2017-11-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/26/general-tools/">general tools</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="tldr"><a href="#tldr" class="headerlink" title="tldr"></a>tldr</h2><p>‘Simplified and community-driven man pages’<br><code>npm install -g tldr</code></p>
+<h2 id="exa"><a href="#exa" class="headerlink" title="exa"></a>exa</h2><p>‘exa is a modern replacement for ls.’<br><code>brew install exa</code></p>
+<h2 id="spectacle"><a href="#spectacle" class="headerlink" title="spectacle"></a>spectacle</h2><p>window management<br><a href="https://www.spectacleapp.com" target="_blank" rel="external">https://www.spectacleapp.com</a></p>
+<h2 id="pullit"><a href="#pullit" class="headerlink" title="pullit"></a>pullit</h2><p>‘Display and pull branches from GitHub pull requests.’<br><code>npm install -g pullit</code></p>
+<p>init github api in index.js with an api token to use with private repos</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://caseycoding.github.io/2017/11/26/general-tools/" data-id="cjch3rw6m0003o89k99n99loy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-notes-1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/08/16/notes-1/" class="article-date">
@@ -76,34 +157,39 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="messaging"><a href="#messaging" class="headerlink" title="messaging"></a>messaging</h2><p><code>w</code> or <code>who</code> to disploay logged in users</p>
-<h3 id="broadcast-to-everyone"><a href="#broadcast-to-everyone" class="headerlink" title="broadcast to everyone"></a>broadcast to everyone</h3><p><code>wall [message]</code> to broadcast the messsage<br>might use <code>-n</code> to omit senders info</p>
+        <h2 id="messaging"><a href="#messaging" class="headerlink" title="messaging"></a>messaging</h2><p><code>w</code> or <code>who</code> to display logged in users</p>
+<h3 id="broadcast-to-everyone"><a href="#broadcast-to-everyone" class="headerlink" title="broadcast to everyone"></a>broadcast to everyone</h3><p><code>wall [message]</code> to broadcast the message<br>might use <code>-n</code> to omit senders info</p>
 <h3 id="broadcast-to-terminal"><a href="#broadcast-to-terminal" class="headerlink" title="broadcast to terminal"></a>broadcast to terminal</h3><p>echo “Lunch” &gt; /dev/pts/1</p>
 <h3 id="open-running-chat"><a href="#open-running-chat" class="headerlink" title="open running chat"></a>open running chat</h3><p><code>write [username] [TTY]</code> e.g. <code>write dev pts/0</code></p>
 <p>srcs:<br><a href="https://unix.stackexchange.com/questions/99460/sending-messages-to-another-user" target="_blank" rel="external">https://unix.stackexchange.com/questions/99460/sending-messages-to-another-user</a><br><a href="https://stackoverflow.com/questions/20091681/sending-message-via-terminal-to-another-logged-on-user-bash-programming" target="_blank" rel="external">https://stackoverflow.com/questions/20091681/sending-message-via-terminal-to-another-logged-on-user-bash-programming</a></p>
-<h2 id="cleaning-up-git-branches"><a href="#cleaning-up-git-branches" class="headerlink" title="cleaning up git branches"></a>cleaning up git branches</h2><p><code>git branch -d [name]</code> - to delete<br><code>git branch --merged</code> - to see whats been merged<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git fetch -p &amp;&amp; <span class="keyword">for</span> branch <span class="keyword">in</span> `git branch -vv | grep <span class="string">': gone]'</span> | awk <span class="string">'&#123;print $1&#125;'</span>`; <span class="keyword">do</span> git branch -d <span class="variable">$branch</span>; <span class="keyword">done</span></div></pre></td></tr></table></figure></p>
+<h2 id="cleaning-up-git-branches"><a href="#cleaning-up-git-branches" class="headerlink" title="cleaning up git branches"></a>cleaning up git branches</h2><p><code>git branch -d [name]</code> - to delete<br><code>git branch --merged</code> - to see whats been merged<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git fetch -p &amp;&amp; <span class="keyword">for</span> branch <span class="keyword">in</span> `git branch -vv | grep <span class="string">': gone]'</span> | awk <span class="string">'&#123;print $1&#125;'</span>`; <span class="keyword">do</span> <span class="built_in">echo</span> <span class="variable">$branch</span>; <span class="keyword">done</span> <span class="comment"># to see what will be deleted</span></div><div class="line">git fetch -p &amp;&amp; <span class="keyword">for</span> branch <span class="keyword">in</span> `git branch -vv | grep <span class="string">': gone]'</span> | awk <span class="string">'&#123;print $1&#125;'</span>`; <span class="keyword">do</span> git branch -d <span class="variable">$branch</span>; <span class="keyword">done</span> <span class="comment"># to delete</span></div></pre></td></tr></table></figure></p>
 <p><code>git branch show origin</code>? - todo: look at this with a clear head<br>^don’t do this</p>
 <h2 id="kill-mongo-stuffs"><a href="#kill-mongo-stuffs" class="headerlink" title="kill mongo stuffs"></a>kill mongo stuffs</h2><p><code>db.currentOp()</code><br><code>db.currentOp( { &quot;$ownOps&quot;: true } )</code> - only your own ops?<br><code>db.killOp([the_opid])</code></p>
-<h2 id="hostname"><a href="#hostname" class="headerlink" title="hostname"></a>hostname</h2><p><code>/etc/hostname</code><br><code>/etc/hosts</code></p>
-<h2 id="vi-delete-all-lines"><a href="#vi-delete-all-lines" class="headerlink" title="vi delete all lines"></a>vi delete all lines</h2><p><code>:1,$d</code><br>src: <a href="https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi" target="_blank" rel="external">https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi</a></p>
-<h2 id="curl-time"><a href="#curl-time" class="headerlink" title="curl time"></a>curl time</h2><p><code>-w %{time_connect}:%{time_starttransfer}:%{time_total}</code><br><code>-w &#39;\n%{time_connect}:%{time_starttransfer}:%{time_total} size: %{size_download}\n&#39;</code></p>
-<h2 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h2><p><code>pm2 logs 0 | sed -n &#39;/key/p&#39;</code><br>src: <a href="https://stackoverflow.com/questions/5385234/using-sed-awk-to-print-lines-with-matching-pattern-or-another-matching-pattern" target="_blank" rel="external">https://stackoverflow.com/questions/5385234/using-sed-awk-to-print-lines-with-matching-pattern-or-another-matching-pattern</a></p>
+<h2 id="host-name"><a href="#host-name" class="headerlink" title="host name"></a>host name</h2><p><code>/etc/hostname</code><br><code>/etc/hosts</code></p>
+<h2 id="mv-multi"><a href="#mv-multi" class="headerlink" title="mv multi"></a>mv multi</h2><p>mv -t DESTINATION file1 file2</p>
+<h2 id="curl-time"><a href="#curl-time" class="headerlink" title="curl time"></a>curl time</h2><p><code>-w %{time_connect}:%{time_starttransfer}:%{time_total}</code><br><code>-w &#39;\ntime_connect: %{time_connect} time_starttransfer: %{time_starttransfer} time_total: %{time_total} size_download: %{size_download}\n&#39;</code></p>
+<h2 id="curl-follow-302"><a href="#curl-follow-302" class="headerlink" title="curl follow 302"></a>curl follow 302</h2><p><code>curl -b cookies.txt</code> with <code>-L</code> or <code>--location-trusted</code><br>This will retain the cookies from the redirect and send them back on the GET</p>
+<h2 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h2><p><code>pm2 logs 0 | sed -n &#39;/key/p&#39;</code><br>src: <a href="https://stackoverflow.com/questions/5385234/using-sed-awk-to-print-lines-with-matching-pattern-or-another-matching-pattern\" target="_blank" rel="external">https://stackoverflow.com/questions/5385234/using-sed-awk-to-print-lines-with-matching-pattern-or-another-matching-pattern\</a><br>sed -EN ‘/key1|key2/p’</p>
 <p><code>sed -n -e &#39;/pattern1/p&#39;</code> for linux?</p>
 <h2 id="reload-term"><a href="#reload-term" class="headerlink" title="reload term"></a>reload term</h2><p>source .bashrc</p>
 <h2 id="bash"><a href="#bash" class="headerlink" title="bash"></a>bash</h2><p><code>sleep 5</code><br><code>!!</code> - entire previous command<br><code>!$</code> - last<br><code>!^</code> - first<br><code>!:3</code> third<br><code>!*</code> all</p>
 <p><code>date +&quot;%B&quot;</code> get date</p>
 <h2 id="nodemon-exec-for-compiling-and-or-linting"><a href="#nodemon-exec-for-compiling-and-or-linting" class="headerlink" title="nodemon --exec for compiling and/or linting"></a><code>nodemon --exec</code> for compiling and/or linting</h2><p><code>nodemon --exec &#39;javac SomeClass.java &amp;&amp; java SomeClass&#39; ./SomeClass</code></p>
-<h2 id="jq"><a href="#jq" class="headerlink" title="jq"></a>jq</h2><p><code>jq &#39;.data.key.term.otherKey&#39;</code></p>
-<h2 id="create-mongo-timestamp-from-1hr-ago-in-bash"><a href="#create-mongo-timestamp-from-1hr-ago-in-bash" class="headerlink" title="create mongo timestamp from 1hr ago in bash"></a>create mongo timestamp from 1hr ago in bash</h2><p><code>printf &#39;ObjectId(&quot;%x0000000000000000&quot;)\n&#39; $(date -v-60M -u +%s)</code></p>
-<h2 id="bash-timestamp"><a href="#bash-timestamp" class="headerlink" title="bash timestamp"></a>bash timestamp</h2><p><code>SECONDS=0</code><br>do some work<br><code>duration=$SECONDS</code><br><code>echo &quot;$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed.&quot;</code></p>
+<h2 id="jq"><a href="#jq" class="headerlink" title="jq"></a>jq</h2><p><code>jq &#39;.data.key.term.otherKey&#39;</code><br><a href="https://github.com/stedolan/jq/" target="_blank" rel="external">https://github.com/stedolan/jq/</a></p>
+<h2 id="create-mongo-time-stamp-from-1hr-ago-in-bash"><a href="#create-mongo-time-stamp-from-1hr-ago-in-bash" class="headerlink" title="create mongo time stamp from 1hr ago in bash"></a>create mongo time stamp from 1hr ago in bash</h2><p><code>printf &#39;ObjectId(&quot;%x0000000000000000&quot;)\n&#39; $(date -v-60M -u +%s)</code></p>
+<h2 id="bash-time-stamp"><a href="#bash-time-stamp" class="headerlink" title="bash time stamp"></a>bash time stamp</h2><p><code>SECONDS=0</code><br>do some work<br><code>duration=$SECONDS</code><br><code>echo &quot;$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed.&quot;</code></p>
 <h2 id="node-memory-testing"><a href="#node-memory-testing" class="headerlink" title="node memory testing"></a>node memory testing</h2><p>kill -s SIGUSR1 node_pid</p>
-<h2 id="looking-at-tags"><a href="#looking-at-tags" class="headerlink" title="looking at tags"></a>looking at tags</h2><p>git describe –tags</p>
+<p><a href="https://codefresh.io/blog/debug_node_in_docker/" target="_blank" rel="external">https://codefresh.io/blog/debug_node_in_docker/</a></p>
+<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><h3 id="looking-at-tags"><a href="#looking-at-tags" class="headerlink" title="looking at tags"></a>looking at tags</h3><p><code>git describe --tags</code></p>
+<h3 id="set-the-author"><a href="#set-the-author" class="headerlink" title="set the author"></a>set the author</h3><p><code>git commit --author=&quot;John Doe &lt;john@doe.com&gt;&quot; -m &quot;&lt;the usual commit message&gt;&quot;</code><br>src: <a href="https://stackoverflow.com/questions/18750808/difference-between-author-and-committer-in-git" target="_blank" rel="external">https://stackoverflow.com/questions/18750808/difference-between-author-and-committer-in-git</a></p>
 <h2 id="find-and-replace"><a href="#find-and-replace" class="headerlink" title="find and replace"></a>find and replace</h2><p>osx:<br><code>find . -type f -name &#39;*.csv&#39; -exec sed -i &#39;&#39; &quot;s/find/replace/g&quot; {} \;</code><br>linux:<br><code>find . -type f -name &#39;*.csv&#39; -exec sed -i &quot;s/{find}/{replace}/g&quot; {} \;</code></p>
+<h2 id="push-pop-dirs"><a href="#push-pop-dirs" class="headerlink" title="push pop dirs"></a>push pop dirs</h2><p><code>pushd</code><br><code>popd</code><br><code>dirs -l #list</code></p>
+<h2 id="look-at-docker-logs-command"><a href="#look-at-docker-logs-command" class="headerlink" title="look at docker logs command"></a>look at docker logs command</h2><p><code>docker logs</code></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2017/08/16/notes-1/" data-id="cjasxlhro0005qq9kconutqdk" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2017/08/16/notes-1/" data-id="cjch3rw6n0004o89kqx5w8imz" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chit-chat/">chit-chat</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
@@ -138,28 +224,36 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>more notes from the past few months:</p>
-<h2 id="webstorm-minimap"><a href="#webstorm-minimap" class="headerlink" title="webstorm minimap"></a>webstorm minimap</h2><p>CodeGlance plugin</p>
 <h2 id="shell-notes"><a href="#shell-notes" class="headerlink" title="shell notes"></a>shell notes</h2><p>use cmd+i to set the ‘badge’ to something useful</p>
 <h2 id="exit-all-ssh-sessions"><a href="#exit-all-ssh-sessions" class="headerlink" title="exit all ssh sessions"></a>exit all ssh sessions</h2><p><code>~.</code></p>
 <p>src = <a href="https://unix.stackexchange.com/questions/41682/exit-out-of-all-ssh-connections-in-one-command-and-close-putty" target="_blank" rel="external">https://unix.stackexchange.com/questions/41682/exit-out-of-all-ssh-connections-in-one-command-and-close-putty</a></p>
-<h2 id="vi-find"><a href="#vi-find" class="headerlink" title="vi find"></a>vi find</h2><p>/string Search forward for string<br>?string Search back for string<br>n Search for next instance of string<br>N Search for previous instance of string</p>
-<h2 id="curl-proxy"><a href="#curl-proxy" class="headerlink" title="curl proxy"></a>curl proxy</h2><p>-x, –proxy <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#91;&#x70;&#114;&#111;&#x74;&#111;&#x63;&#111;&#108;&#x3a;&#x2f;&#x2f;&#93;&#x5b;&#117;&#115;&#101;&#x72;&#x3a;&#x70;&#x61;&#115;&#115;&#119;&#x6f;&#114;&#x64;&#x40;&#x5d;&#112;&#x72;&#111;&#120;&#121;&#104;&#111;&#115;&#116;&#x5b;&#x3a;&#112;&#111;&#114;&#116;&#x5d;">&#91;&#x70;&#114;&#111;&#x74;&#111;&#x63;&#111;&#108;&#x3a;&#x2f;&#x2f;&#93;&#x5b;&#117;&#115;&#101;&#x72;&#x3a;&#x70;&#x61;&#115;&#115;&#119;&#x6f;&#114;&#x64;&#x40;&#x5d;&#112;&#x72;&#111;&#120;&#121;&#104;&#111;&#115;&#116;&#x5b;&#x3a;&#112;&#111;&#114;&#116;&#x5d;</a></p>
-<h2 id="find-and-kill-that-process"><a href="#find-and-kill-that-process" class="headerlink" title="find (and kill) that process"></a>find (and kill) that process</h2><p>ps -A | less<br>ps -A | grep firefox</p>
-<p>kill 31098<br>kill -15 (SIGTERM) 31098</p>
-<h2 id="webstorm"><a href="#webstorm" class="headerlink" title="webstorm"></a>webstorm</h2><p><em>scratch page</em><br>shift + command + n</p>
-<p><em>search everywhere</em><br>shift + shift + shift</p>
-<h2 id="cd-back"><a href="#cd-back" class="headerlink" title="cd back"></a>cd back</h2><p><code>cd -</code></p>
-<h2 id="protobuf"><a href="#protobuf" class="headerlink" title="protobuf"></a>protobuf</h2><p>If you are running into an error with node-gyp regarding protobuf when running npm install:<br>brew install protobuf<br>brew install pkg-config</p>
-<h2 id="send-output-to-file-and-console"><a href="#send-output-to-file-and-console" class="headerlink" title="send output to file and console"></a>send output to file and console</h2><p><code>tee</code> it up!</p>
-<h2 id="color-output"><a href="#color-output" class="headerlink" title="color output"></a>color output</h2><p><code>console.log(&#39;\x1b[36m%s\x1b[0m&#39;, &#39;I am cyan&#39;);</code><br><a href="https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color" target="_blank" rel="external">https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color</a></p>
-<h2 id="mongo"><a href="#mongo" class="headerlink" title="mongo"></a>mongo</h2><p><code>db.collection.find().limit(1).sort({$natural:-1})</code><br><code>.pretty()</code> on json payloads to make them…pretty.<br><code>.explain(&#39;executionStats&#39;)</code></p>
-<p><code>db.stuff.find( { foo: /^bar$/i } )</code><br><a href="https://stackoverflow.com/questions/1863399/mongodb-is-it-possible-to-make-a-case-insensitive-query" target="_blank" rel="external">https://stackoverflow.com/questions/1863399/mongodb-is-it-possible-to-make-a-case-insensitive-query</a></p>
-<p><code>db.currentOp( { &quot;$ownOps&quot;: true } )</code><br><code>db.killOp(the_opid)</code></p>
-<h2 id="remove-env-vars"><a href="#remove-env-vars" class="headerlink" title="remove env vars"></a>remove env vars</h2><p><code>unset &lt;var&gt;</code></p>
-<h2 id="vi-line-moving"><a href="#vi-line-moving" class="headerlink" title="vi line moving"></a>vi line moving</h2><blockquote>
+<h2 id="vi"><a href="#vi" class="headerlink" title="vi"></a>vi</h2><h3 id="vi-find"><a href="#vi-find" class="headerlink" title="vi find"></a>vi find</h3><p>/string Search forward for string<br>?string Search back for string<br>n Search for next instance of string<br>N Search for previous instance of string</p>
+<h3 id="vi-delete-all-lines"><a href="#vi-delete-all-lines" class="headerlink" title="vi delete all lines"></a>vi delete all lines</h3><p><code>:1,$d</code><br>src: <a href="https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi" target="_blank" rel="external">https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi</a></p>
+<h3 id="vi-line-moving"><a href="#vi-line-moving" class="headerlink" title="vi line moving"></a>vi line moving</h3><blockquote>
 <p>Therefore, dd p / dd k P are common commands to move a line one down / up.<br>src: <a href="https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line" target="_blank" rel="external">https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line</a></p>
 </blockquote>
 <p><code>yy</code> to yank<br><code>p</code> to paste after<br><code>P</code> to paste before<br><code>u</code> to undo</p>
+<h3 id="comment-out-in-vim"><a href="#comment-out-in-vim" class="headerlink" title="comment out in vim"></a>comment out in vim</h3><p>ctrl+v to enter visual block<br>x to delete selection<br>shift+I to enter edit mode on multiple lines</p>
+<p>src: <a href="https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim" target="_blank" rel="external">https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim</a></p>
+<h3 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h3><p>:w [filename]</p>
+<h2 id="curl-proxy"><a href="#curl-proxy" class="headerlink" title="curl proxy"></a>curl proxy</h2><p>-x, –proxy <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#91;&#x70;&#x72;&#111;&#116;&#x6f;&#99;&#x6f;&#108;&#x3a;&#x2f;&#47;&#x5d;&#x5b;&#117;&#x73;&#x65;&#114;&#x3a;&#x70;&#x61;&#115;&#x73;&#119;&#x6f;&#114;&#x64;&#x40;&#93;&#x70;&#114;&#x6f;&#120;&#121;&#x68;&#111;&#115;&#x74;&#x5b;&#58;&#112;&#x6f;&#x72;&#116;&#x5d;">&#91;&#x70;&#x72;&#111;&#116;&#x6f;&#99;&#x6f;&#108;&#x3a;&#x2f;&#47;&#x5d;&#x5b;&#117;&#x73;&#x65;&#114;&#x3a;&#x70;&#x61;&#115;&#x73;&#119;&#x6f;&#114;&#x64;&#x40;&#93;&#x70;&#114;&#x6f;&#120;&#121;&#x68;&#111;&#115;&#x74;&#x5b;&#58;&#112;&#x6f;&#x72;&#116;&#x5d;</a></p>
+<h2 id="find-and-kill-that-process"><a href="#find-and-kill-that-process" class="headerlink" title="find (and kill) that process"></a>find (and kill) that process</h2><p><code>ps -A | less</code><br><code>ps -A | grep firefox</code><br><code>ps -feww | grep firefox</code></p>
+<p><code>kill 31098</code><br><code>kill -15 (SIGTERM) 31098</code></p>
+<h2 id="webstorm"><a href="#webstorm" class="headerlink" title="webstorm"></a>webstorm</h2><p><em>minimap</em><br>CodeGlance plug in</p>
+<p><em>scratch page</em><br>shift + command + n</p>
+<p><em>search everywhere</em><br>shift + shift + shift</p>
+<p><em>aut0-format</em><br><code>⌥+⌘+L</code><br>option + command + L</p>
+<h2 id="cd-back"><a href="#cd-back" class="headerlink" title="cd back"></a>cd back</h2><p><code>cd -</code></p>
+<h2 id="protobuf"><a href="#protobuf" class="headerlink" title="protobuf"></a>protobuf</h2><p>If you are running into an error with node-gyp regarding protobuf when running npm install:<br><code>brew install protobuf</code><br><code>brew install pkg-config</code></p>
+<h2 id="send-output-to-file-and-console"><a href="#send-output-to-file-and-console" class="headerlink" title="send output to file and console"></a>send output to file and console</h2><p><code>tee</code> it up!</p>
+<h2 id="color-output"><a href="#color-output" class="headerlink" title="color output"></a>color output</h2><p><code>console.log(&#39;\x1b[36m%s\x1b[0m&#39;, &#39;I am cyan&#39;);</code><br><a href="https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color" target="_blank" rel="external">https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color</a></p>
+<h2 id="mongo"><a href="#mongo" class="headerlink" title="mongo"></a>mongo</h2><p><code>db.collection.find().limit(1).sort({$natural:-1})</code><br><code>.pretty()</code> on json payloads to make them…pretty.<br><code>.explain(&#39;executionStats&#39;)</code><br><code>{$regex : &quot;.*/route$&quot;}</code></p>
+<h3 id="case-insensitive"><a href="#case-insensitive" class="headerlink" title="case insensitive"></a>case insensitive</h3><p><code>db.stuff.find( { foo: /^bar$/i } )</code><br><a href="https://stackoverflow.com/questions/1863399/mongodb-is-it-possible-to-make-a-case-insensitive-query" target="_blank" rel="external">https://stackoverflow.com/questions/1863399/mongodb-is-it-possible-to-make-a-case-insensitive-query</a></p>
+<h3 id="kill-mongo-stuffs"><a href="#kill-mongo-stuffs" class="headerlink" title="kill mongo stuffs"></a>kill mongo stuffs</h3><p><code>db.currentOp()</code><br><code>db.currentOp( { &quot;$ownOps&quot;: true } )</code> - only your own ops?<br><code>db.killOp([the_opid])</code><br><code>db.currentOp().inprog.length</code></p>
+<h3 id="and-or"><a href="#and-or" class="headerlink" title="and or"></a>and or</h3><p>$and: [{expression 1}, {expression 2}]<br>$or: [{expression 1}, {expression 2}]</p>
+<p>db.collection.find({<br>  “_id”: {<br>    $gt: ObjectId(“5a3ad38c0000000000000000”)<br>  },<br>  “name”: “Joe”,<br>  $and: [<br>  {“items”: {<br>      “$elemMatch”: {<br>          “fName”: /Case/i<br>        }<br>  }},<br>  {“items”: {<br>      “$elemMatch”: {<br>          “lname”: /Jojo/i<br>        }<br>  }}<br>  ]<br>}).sort({$natural:-1})</p>
+<p>.maxTimeMS()</p>
+<h2 id="remove-env-vars"><a href="#remove-env-vars" class="headerlink" title="remove env vars"></a>remove env vars</h2><p><code>unset &lt;var&gt;</code></p>
 <h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h2><p>multiples<br><code>grep -e foo -e bar *.txt</code></p>
 <p>extra spaces<br>-A after<br>-B before<br>-C both</p>
 <p>src: <a href="https://unix.stackexchange.com/questions/37313/how-do-i-grep-for-multiple-patterns" target="_blank" rel="external">https://unix.stackexchange.com/questions/37313/how-do-i-grep-for-multiple-patterns</a></p>
@@ -171,17 +265,14 @@
 <p><code>grep -r &#39;ls -G&#39; ~</code><br>src (2nd answer down): <a href="https://stackoverflow.com/questions/2614403/how-to-find-out-where-alias-in-the-bash-sense-is-defined-when-running-terminal" target="_blank" rel="external">https://stackoverflow.com/questions/2614403/how-to-find-out-where-alias-in-the-bash-sense-is-defined-when-running-terminal</a></p>
 <p>to override<br><code>command ls</code></p>
 <h2 id="ping-to-get-ip-of-url"><a href="#ping-to-get-ip-of-url" class="headerlink" title="ping to get ip of url"></a>ping to get ip of url</h2><h2 id="windows-ssh"><a href="#windows-ssh" class="headerlink" title="windows ssh"></a>windows ssh</h2><p>eval <code>ssh-agent -s</code><br>ssh-add -l<br>ssh-add .ssh/your_id #not the pub one</p>
-<h2 id="webstorm-reformat-code"><a href="#webstorm-reformat-code" class="headerlink" title="webstorm reformat code"></a>webstorm reformat code</h2><p><code>⌥+⌘+L</code><br>option + command + L</p>
-<h2 id="comment-out-in-vim"><a href="#comment-out-in-vim" class="headerlink" title="comment out in vim"></a>comment out in vim</h2><p>ctrl+v to enter visual block<br>x to delete selection<br>shift+I to enter edit mode on multiple lines</p>
-<p>src: <a href="https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim" target="_blank" rel="external">https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2017/06/09/weekly-notes-1/" data-id="cjasxlhrs0008qq9k7i7ji6m9" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2017/06/09/weekly-notes-1/" data-id="cjch3rw6t000bo89ku820kqmx" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clutch/">clutch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mongo/">mongo</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clutch/">clutch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mongo/">mongo</a></li></ul>
 
     </footer>
   </div>
@@ -213,12 +304,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>notes from the past few months:</p>
-<h2 id="Terminal-Copy"><a href="#Terminal-Copy" class="headerlink" title="Terminal Copy"></a>Terminal Copy</h2><p>copy and paste pwd form command line:<br><code>pwd | pbcopy</code> –&gt; to copy current dirctory to clipboard<br>then <code>cd $(pbpaste)</code> –&gt; to cd in different terminal</p>
-<h2 id="Copying-when-sshed-in"><a href="#Copying-when-sshed-in" class="headerlink" title="Copying when sshed in"></a>Copying when sshed in</h2><p>commandThatMakesOutput | ssh (hostname) pbcopy<br>need local ssh server though…</p>
+<h2 id="Terminal-Copy"><a href="#Terminal-Copy" class="headerlink" title="Terminal Copy"></a>Terminal Copy</h2><p>copy and paste pwd form command line:<br><code>pwd | pbcopy</code> –&gt; to copy current directory to clipboard<br>then <code>cd $(pbpaste)</code> –&gt; to cd in different terminal</p>
+<h2 id="Copying-when-sshed-in"><a href="#Copying-when-sshed-in" class="headerlink" title="Copying when sshed in"></a>Copying when sshed in</h2><p>commandThatMakesOutput | ssh (host name) pbcopy<br>need local ssh server though…</p>
 <p>Source: <a href="http://stackoverflow.com/questions/1152362/getting-items-on-the-local-clipboard-from-a-remote-ssh-session" target="_blank" rel="external">http://stackoverflow.com/questions/1152362/getting-items-on-the-local-clipboard-from-a-remote-ssh-session</a></p>
-<h2 id="scroll-up-in-terminal"><a href="#scroll-up-in-terminal" class="headerlink" title="scroll up in terminal:"></a>scroll up in terminal:</h2><p>shit + fn upkey (page up)</p>
-<h2 id="iTerm2-command-overlord"><a href="#iTerm2-command-overlord" class="headerlink" title="iTerm2 command overlord"></a>iTerm2 command overlord</h2><p>command + shift + i = send commmand to all terminal windows</p>
-<h2 id="Webstorm"><a href="#Webstorm" class="headerlink" title="Webstorm"></a>Webstorm</h2><p>command 1 = project view<br>command 2 = favorites<br>command 3 = search thingy<br>esc       = return to editor</p>
+<h2 id="scroll-up-in-terminal"><a href="#scroll-up-in-terminal" class="headerlink" title="scroll up in terminal:"></a>scroll up in terminal:</h2><p>shit + fn up-key (page up)</p>
+<h2 id="iTerm2-command-overlord"><a href="#iTerm2-command-overlord" class="headerlink" title="iTerm2 command overlord"></a>iTerm2 command overlord</h2><p>command + shift + i = send command to all terminal windows</p>
+<h2 id="webstorm"><a href="#webstorm" class="headerlink" title="webstorm"></a>webstorm</h2><p>command 1 = project view<br>command 2 = favorites<br>command 3 = search thingy<br>esc       = return to editor</p>
 <h2 id="Mongo-‘the-mongo-shell-speaks-js’"><a href="#Mongo-‘the-mongo-shell-speaks-js’" class="headerlink" title="Mongo - ‘the mongo shell speaks js’"></a>Mongo - ‘the mongo shell speaks js’</h2><p>decodeURIComponent(query that returns stringified stuff)</p>
 <h2 id="npm-test"><a href="#npm-test" class="headerlink" title="npm test"></a><code>npm test</code></h2><p>exit status 0 is added to the end of npm test calls</p>
 <p>Use <code>; exit 0</code> to replicate this for other npm scripts.</p>
@@ -229,7 +320,7 @@
 <h2 id="Broken-Git-Fetch"><a href="#Broken-Git-Fetch" class="headerlink" title="Broken Git Fetch?"></a>Broken Git Fetch?</h2><p><code>git config remote.origin.fetch &quot;+refs/heads/*:refs/remotes/origin/*&quot;</code></p>
 <h2 id="Running-in-background"><a href="#Running-in-background" class="headerlink" title="Running in background"></a>Running in background</h2><p>node server.js &gt; std.txt  2&gt; err.txt &amp;</p>
 <p>src: <a href="https://kb.iu.edu/d/afnz" target="_blank" rel="external">https://kb.iu.edu/d/afnz</a></p>
-<h2 id="Timestamp-in-name"><a href="#Timestamp-in-name" class="headerlink" title="Timestamp in name"></a>Timestamp in name</h2><p>$(date +%s)</p>
+<h2 id="Time-stamp-in-name"><a href="#Time-stamp-in-name" class="headerlink" title="Time stamp in name"></a>Time stamp in name</h2><p>$(date +%s)</p>
 <h2 id="What-does-etc-stand-for"><a href="#What-does-etc-stand-for" class="headerlink" title="What does /etc stand for?"></a>What does /etc stand for?</h2><p><a href="http://www.aboutlinux.info/2007/03/what-does-etc-stands-for-in-linuxunix.html" target="_blank" rel="external">http://www.aboutlinux.info/2007/03/what-does-etc-stands-for-in-linuxunix.html</a></p>
 <h2 id="JSON-Funzies"><a href="#JSON-Funzies" class="headerlink" title="JSON Funzies"></a>JSON Funzies</h2><p><code>json_pp</code><br><code>jq</code> - <code>jq &#39;if ._links.html then ._links.html.href else .errors[0].message end&#39;</code></p>
 <h2 id="Shhh-curl-shhh"><a href="#Shhh-curl-shhh" class="headerlink" title="Shhh curl, shhh"></a>Shhh curl, shhh</h2><p><code>-s</code> flag prevents process display</p>
@@ -244,17 +335,18 @@
 <p><code>npm update -g</code><br>update globals - not sure if this is recommended</p>
 <p><code>npm rb</code><br>rebuild after changing node version</p>
 <p>src: <a href="https://medium.com/@adiramsalem/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e" target="_blank" rel="external">https://medium.com/@adiramsalem/8-npm-tricks-you-can-use-to-impress-your-colleagues-dbdae1ef5f9e</a></p>
-<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p><code>git reset HEAD~</code></p>
+<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h2><p><code>git reset HEAD~</code></p>
 <p>src: <a href="http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git" target="_blank" rel="external">http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git</a></p>
+<p>good ref for other things:<br><a href="http://ohshitgit.com" target="_blank" rel="external">http://ohshitgit.com</a></p>
 <h2 id="vi"><a href="#vi" class="headerlink" title="vi"></a>vi</h2><p><code>set number</code><br><code>:44</code><br><code>syntax off</code></p>
-<p>pasting<br><code>:set paste</code> then <code>:set nopaste</code><br>src: <a href="https://stackoverflow.com/questions/3217007/how-do-you-paste-with-vim-without-code-being-commented" target="_blank" rel="external">https://stackoverflow.com/questions/3217007/how-do-you-paste-with-vim-without-code-being-commented</a></p>
+<p>pasting<br><code>:set paste</code> then <code>i</code> then <code>:set nopaste</code><br>src: <a href="https://stackoverflow.com/questions/3217007/how-do-you-paste-with-vim-without-code-being-commented" target="_blank" rel="external">https://stackoverflow.com/questions/3217007/how-do-you-paste-with-vim-without-code-being-commented</a></p>
 <h2 id="docker-port-publishing"><a href="#docker-port-publishing" class="headerlink" title="docker port publishing"></a>docker port publishing</h2><p><code>docker run -d -p 127.0.0.1:80:8080 ubuntu bash</code></p>
 <p>This binds port 8080 of the container to port 80 on 127.0.0.1 of the host machine.<br>A.k.a <code>-p [host]:[container]</code>. host:container, host:container got it.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2017/05/20/weekly-notes/" data-id="cjasxlhrt0009qq9knbnnv1ef" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2017/05/20/weekly-notes/" data-id="cjch3rw6r0008o89kil45srlq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clutch/">clutch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
@@ -304,7 +396,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2015/11/30/notes/" data-id="cjasxlhrp0006qq9ky50yyi8g" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2015/11/30/notes/" data-id="cjch3rw6s0009o89k5prnkmv8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -342,7 +434,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2015/11/28/hello-blog/" data-id="cjasxlhro0004qq9k7gp28miz" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2015/11/28/hello-blog/" data-id="cjch3rw6q0007o89kbl2w3u8n" class="article-share-link">Share</a>
       
       
     </footer>
@@ -360,7 +452,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2017 Casey Loren Billman<br>
+      &copy; 2018 Casey Loren Billman<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
