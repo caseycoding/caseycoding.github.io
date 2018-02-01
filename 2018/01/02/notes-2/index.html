@@ -5,17 +5,17 @@
   
   <title>notes | bookkeeping</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="work notes by month123notes() &amp;#123;	subl ~/work/notes/$(date +%B)&amp;#125; documentation toolsascii flow chartingobviously draw.io">
+  <meta name="description" content="work notes by month123notes() &amp;#123;	subl ~/work/notes/$(date +%B)&amp;#125; documentation toolsascii flow chartingobviously draw.io git difffilter new files:git diff origin/base origin/head --diff-filter">
 <meta name="keywords" content="taking better notes">
 <meta property="og:type" content="article">
 <meta property="og:title" content="notes">
 <meta property="og:url" content="http://caseycoding.github.io/2018/01/02/notes-2/index.html">
 <meta property="og:site_name" content="bookkeeping">
-<meta property="og:description" content="work notes by month123notes() &amp;#123;	subl ~/work/notes/$(date +%B)&amp;#125; documentation toolsascii flow chartingobviously draw.io">
-<meta property="og:updated_time" content="2018-01-12T04:13:04.948Z">
+<meta property="og:description" content="work notes by month123notes() &amp;#123;	subl ~/work/notes/$(date +%B)&amp;#125; documentation toolsascii flow chartingobviously draw.io git difffilter new files:git diff origin/base origin/head --diff-filter">
+<meta property="og:updated_time" content="2018-02-01T03:03:51.166Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="notes">
-<meta name="twitter:description" content="work notes by month123notes() &amp;#123;	subl ~/work/notes/$(date +%B)&amp;#125; documentation toolsascii flow chartingobviously draw.io">
+<meta name="twitter:description" content="work notes by month123notes() &amp;#123;	subl ~/work/notes/$(date +%B)&amp;#125; documentation toolsascii flow chartingobviously draw.io git difffilter new files:git diff origin/base origin/head --diff-filter">
   
     <link rel="alternative" href="/atom.xml" title="bookkeeping" type="application/atom+xml">
   
@@ -81,11 +81,21 @@
       
         <h2 id="work-notes-by-month"><a href="#work-notes-by-month" class="headerlink" title="work notes by month"></a>work notes by month</h2><figure class="highlight mel"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">notes() &#123;</div><div class="line">	subl ~/work/notes/$(<span class="keyword">date</span> +%B)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="documentation-tools"><a href="#documentation-tools" class="headerlink" title="documentation tools"></a>documentation tools</h2><p><a href="http://stable.ascii-flow.appspot.com/" target="_blank" rel="external">ascii flow charting</a><br>obviously <a href="draw.io">draw.io</a></p>
+<h2 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h2><p>filter new files:<br><code>git diff origin/base origin/head --diff-filter=M</code></p>
+<h2 id="vi"><a href="#vi" class="headerlink" title="vi"></a>vi</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">w   jump <span class="keyword">by</span> start <span class="keyword">of</span> <span class="built_in">words</span> (punctuation considered <span class="built_in">words</span>)</div><div class="line">W   jump <span class="keyword">by</span> <span class="built_in">words</span> (spaces separate <span class="built_in">words</span>)</div><div class="line">e   jump <span class="keyword">to</span> <span class="keyword">end</span> <span class="keyword">of</span> <span class="built_in">words</span> (punctuation considered <span class="built_in">words</span>)</div><div class="line">E   jump <span class="keyword">to</span> <span class="keyword">end</span> <span class="keyword">of</span> <span class="built_in">words</span> (no punctuation)</div></pre></td></tr></table></figure>
+<h2 id="Linux-basics-day"><a href="#Linux-basics-day" class="headerlink" title="Linux basics day:"></a>Linux basics day:</h2><h3 id="Grep"><a href="#Grep" class="headerlink" title="Grep"></a>Grep</h3><p>File pattern searcher<br>grep -E === egrep<br>grep -F === fgrep</p>
+<p>basic usage<br><code>grep [options] [pattern] [file]</code></p>
+<p>common options<br>-B lines before context<br>-A lines after after context<br>-C lines around context (-A num and -B num)<br>-e regex pattern</p>
+<p>egrep is regex-ish grep<br>fgrep interprets pattern a a set of fixed strings separated by new lines<br>e.g. grep -F -f user_list.txt /etc/group</p>
+<p>src: <a href="https://unix.stackexchange.com/questions/17949/what-is-the-difference-between-grep-egrep-and-fgrep" target="_blank" rel="external">https://unix.stackexchange.com/questions/17949/what-is-the-difference-between-grep-egrep-and-fgrep</a></p>
+<h3 id="Find"><a href="#Find" class="headerlink" title="Find"></a>Find</h3><p><code>find [directory] -name Filename -type f</code><br><code>find [directory] -name &quot;.txt&quot;</code><br><code>find . -name Notes -type d</code><br><code>find ./Documents ./Downloads -name 30.csv</code></p>
+<h3 id="Hard-vs-soft-or-symbolic-links"><a href="#Hard-vs-soft-or-symbolic-links" class="headerlink" title="Hard vs soft or symbolic links"></a>Hard vs soft or symbolic links</h3><p> +———+       +—–+      +—-+<br> |notes.txt|+—–&gt;|inode|+—-&gt;|data|<br> +———+       +—–+      +—-+<br>      ^<br>      |<br>      +<br>+———–+<br>|symlink.txt|<br>+———–+<br>Hardlink points to inode<br>Symlink points to hardlink</p>
+<h3 id="Sockets-and-ports"><a href="#Sockets-and-ports" class="headerlink" title="Sockets and ports"></a>Sockets and ports</h3><p>Ports are like the…port<br>Socket is like the dock number<br>One socket is used to listen for incoming connections.  When something comes through, a new socket is created to handling the request, mapped to the same port.  The original socket waits for more requests.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2018/01/02/notes-2/" data-id="cjch3rw6o0005o89kx4xc8mzc" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2018/01/02/notes-2/" data-id="cjd3zseim0006uk9kkbug80oh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/taking-better-notes/">taking better notes</a></li></ul>

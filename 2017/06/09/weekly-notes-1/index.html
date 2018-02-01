@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://caseycoding.github.io/2017/06/09/weekly-notes-1/index.html">
 <meta property="og:site_name" content="bookkeeping">
 <meta property="og:description" content="more notes from the past few months: shell notesuse cmd+i to set the ‘badge’ to something useful exit all ssh sessions~. src = https://unix.stackexchange.com/questions/41682/exit-out-of-all-ssh-connec">
-<meta property="og:updated_time" content="2018-01-16T03:56:12.325Z">
+<meta property="og:updated_time" content="2018-01-18T00:11:33.349Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="notes">
 <meta name="twitter:description" content="more notes from the past few months: shell notesuse cmd+i to set the ‘badge’ to something useful exit all ssh sessions~. src = https://unix.stackexchange.com/questions/41682/exit-out-of-all-ssh-connec">
@@ -86,13 +86,14 @@
 <h2 id="vi"><a href="#vi" class="headerlink" title="vi"></a>vi</h2><h3 id="vi-find"><a href="#vi-find" class="headerlink" title="vi find"></a>vi find</h3><p>/string Search forward for string<br>?string Search back for string<br>n Search for next instance of string<br>N Search for previous instance of string</p>
 <h3 id="vi-delete-all-lines"><a href="#vi-delete-all-lines" class="headerlink" title="vi delete all lines"></a>vi delete all lines</h3><p><code>:1,$d</code><br>src: <a href="https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi" target="_blank" rel="external">https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi</a></p>
 <h3 id="vi-line-moving"><a href="#vi-line-moving" class="headerlink" title="vi line moving"></a>vi line moving</h3><blockquote>
-<p>Therefore, dd p / dd k P are common commands to move a line one down / up.<br>src: <a href="https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line" target="_blank" rel="external">https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line</a></p>
+<p>Therefore, dd p / dd k P are common commands to move a line one down / up.</p>
 </blockquote>
+<p>src: <a href="https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line" target="_blank" rel="external">https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line</a></p>
 <p><code>yy</code> to yank<br><code>p</code> to paste after<br><code>P</code> to paste before<br><code>u</code> to undo</p>
 <h3 id="comment-out-in-vim"><a href="#comment-out-in-vim" class="headerlink" title="comment out in vim"></a>comment out in vim</h3><p>ctrl+v to enter visual block<br>x to delete selection<br>shift+I to enter edit mode on multiple lines</p>
 <p>src: <a href="https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim" target="_blank" rel="external">https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim</a></p>
 <h3 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h3><p>:w [filename]</p>
-<h2 id="curl-proxy"><a href="#curl-proxy" class="headerlink" title="curl proxy"></a>curl proxy</h2><p>-x, –proxy <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#91;&#x70;&#x72;&#111;&#116;&#x6f;&#99;&#x6f;&#108;&#x3a;&#x2f;&#47;&#x5d;&#x5b;&#117;&#x73;&#x65;&#114;&#x3a;&#x70;&#x61;&#115;&#x73;&#119;&#x6f;&#114;&#x64;&#x40;&#93;&#x70;&#114;&#x6f;&#120;&#121;&#x68;&#111;&#115;&#x74;&#x5b;&#58;&#112;&#x6f;&#x72;&#116;&#x5d;">&#91;&#x70;&#x72;&#111;&#116;&#x6f;&#99;&#x6f;&#108;&#x3a;&#x2f;&#47;&#x5d;&#x5b;&#117;&#x73;&#x65;&#114;&#x3a;&#x70;&#x61;&#115;&#x73;&#119;&#x6f;&#114;&#x64;&#x40;&#93;&#x70;&#114;&#x6f;&#120;&#121;&#x68;&#111;&#115;&#x74;&#x5b;&#58;&#112;&#x6f;&#x72;&#116;&#x5d;</a></p>
+<h2 id="curl-proxy"><a href="#curl-proxy" class="headerlink" title="curl proxy"></a>curl proxy</h2><p>-x, –proxy <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#91;&#x70;&#114;&#111;&#116;&#111;&#99;&#x6f;&#108;&#58;&#x2f;&#47;&#93;&#x5b;&#x75;&#x73;&#101;&#x72;&#x3a;&#112;&#97;&#115;&#115;&#119;&#x6f;&#114;&#100;&#64;&#93;&#112;&#114;&#111;&#x78;&#x79;&#104;&#x6f;&#x73;&#x74;&#91;&#x3a;&#112;&#x6f;&#114;&#116;&#x5d;">&#91;&#x70;&#114;&#111;&#116;&#111;&#99;&#x6f;&#108;&#58;&#x2f;&#47;&#93;&#x5b;&#x75;&#x73;&#101;&#x72;&#x3a;&#112;&#97;&#115;&#115;&#119;&#x6f;&#114;&#100;&#64;&#93;&#112;&#114;&#111;&#x78;&#x79;&#104;&#x6f;&#x73;&#x74;&#91;&#x3a;&#112;&#x6f;&#114;&#116;&#x5d;</a></p>
 <h2 id="find-and-kill-that-process"><a href="#find-and-kill-that-process" class="headerlink" title="find (and kill) that process"></a>find (and kill) that process</h2><p><code>ps -A | less</code><br><code>ps -A | grep firefox</code><br><code>ps -feww | grep firefox</code></p>
 <p><code>kill 31098</code><br><code>kill -15 (SIGTERM) 31098</code></p>
 <h2 id="webstorm"><a href="#webstorm" class="headerlink" title="webstorm"></a>webstorm</h2><p><em>minimap</em><br>CodeGlance plug in</p>
@@ -125,7 +126,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2017/06/09/weekly-notes-1/" data-id="cjch3rw6t000bo89ku820kqmx" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2017/06/09/weekly-notes-1/" data-id="cjd3zseiq000auk9k75vlbpyr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clutch/">clutch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mongo/">mongo</a></li></ul>

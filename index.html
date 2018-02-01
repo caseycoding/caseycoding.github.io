@@ -78,11 +78,21 @@
       
         <h2 id="work-notes-by-month"><a href="#work-notes-by-month" class="headerlink" title="work notes by month"></a>work notes by month</h2><figure class="highlight mel"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">notes() &#123;</div><div class="line">	subl ~/work/notes/$(<span class="keyword">date</span> +%B)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="documentation-tools"><a href="#documentation-tools" class="headerlink" title="documentation tools"></a>documentation tools</h2><p><a href="http://stable.ascii-flow.appspot.com/" target="_blank" rel="external">ascii flow charting</a><br>obviously <a href="draw.io">draw.io</a></p>
+<h2 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h2><p>filter new files:<br><code>git diff origin/base origin/head --diff-filter=M</code></p>
+<h2 id="vi"><a href="#vi" class="headerlink" title="vi"></a>vi</h2><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">w   jump <span class="keyword">by</span> start <span class="keyword">of</span> <span class="built_in">words</span> (punctuation considered <span class="built_in">words</span>)</div><div class="line">W   jump <span class="keyword">by</span> <span class="built_in">words</span> (spaces separate <span class="built_in">words</span>)</div><div class="line">e   jump <span class="keyword">to</span> <span class="keyword">end</span> <span class="keyword">of</span> <span class="built_in">words</span> (punctuation considered <span class="built_in">words</span>)</div><div class="line">E   jump <span class="keyword">to</span> <span class="keyword">end</span> <span class="keyword">of</span> <span class="built_in">words</span> (no punctuation)</div></pre></td></tr></table></figure>
+<h2 id="Linux-basics-day"><a href="#Linux-basics-day" class="headerlink" title="Linux basics day:"></a>Linux basics day:</h2><h3 id="Grep"><a href="#Grep" class="headerlink" title="Grep"></a>Grep</h3><p>File pattern searcher<br>grep -E === egrep<br>grep -F === fgrep</p>
+<p>basic usage<br><code>grep [options] [pattern] [file]</code></p>
+<p>common options<br>-B lines before context<br>-A lines after after context<br>-C lines around context (-A num and -B num)<br>-e regex pattern</p>
+<p>egrep is regex-ish grep<br>fgrep interprets pattern a a set of fixed strings separated by new lines<br>e.g. grep -F -f user_list.txt /etc/group</p>
+<p>src: <a href="https://unix.stackexchange.com/questions/17949/what-is-the-difference-between-grep-egrep-and-fgrep" target="_blank" rel="external">https://unix.stackexchange.com/questions/17949/what-is-the-difference-between-grep-egrep-and-fgrep</a></p>
+<h3 id="Find"><a href="#Find" class="headerlink" title="Find"></a>Find</h3><p><code>find [directory] -name Filename -type f</code><br><code>find [directory] -name &quot;.txt&quot;</code><br><code>find . -name Notes -type d</code><br><code>find ./Documents ./Downloads -name 30.csv</code></p>
+<h3 id="Hard-vs-soft-or-symbolic-links"><a href="#Hard-vs-soft-or-symbolic-links" class="headerlink" title="Hard vs soft or symbolic links"></a>Hard vs soft or symbolic links</h3><p> +———+       +—–+      +—-+<br> |notes.txt|+—–&gt;|inode|+—-&gt;|data|<br> +———+       +—–+      +—-+<br>      ^<br>      |<br>      +<br>+———–+<br>|symlink.txt|<br>+———–+<br>Hardlink points to inode<br>Symlink points to hardlink</p>
+<h3 id="Sockets-and-ports"><a href="#Sockets-and-ports" class="headerlink" title="Sockets and ports"></a>Sockets and ports</h3><p>Ports are like the…port<br>Socket is like the dock number<br>One socket is used to listen for incoming connections.  When something comes through, a new socket is created to handling the request, mapped to the same port.  The original socket waits for more requests.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2018/01/02/notes-2/" data-id="cjch3rw6o0005o89kx4xc8mzc" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2018/01/02/notes-2/" data-id="cjd3zseim0006uk9kkbug80oh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/taking-better-notes/">taking better notes</a></li></ul>
@@ -120,12 +130,12 @@
 <h2 id="exa"><a href="#exa" class="headerlink" title="exa"></a>exa</h2><p>‘exa is a modern replacement for ls.’<br><code>brew install exa</code></p>
 <h2 id="spectacle"><a href="#spectacle" class="headerlink" title="spectacle"></a>spectacle</h2><p>window management<br><a href="https://www.spectacleapp.com" target="_blank" rel="external">https://www.spectacleapp.com</a></p>
 <h2 id="pullit"><a href="#pullit" class="headerlink" title="pullit"></a>pullit</h2><p>‘Display and pull branches from GitHub pull requests.’<br><code>npm install -g pullit</code></p>
-<p>init github api in index.js with an api token to use with private repos</p>
+<p>init github api in index.js with an api token to use with private repos<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">this</span>.github.authenticate(&#123;</div><div class="line">  <span class="attr">type</span>: <span class="string">'token'</span>,</div><div class="line">  <span class="attr">token</span>: <span class="string">'TOKENTOKENTOKENTOKENTOKENTOKENTOKENTOKEN'</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2017/11/26/general-tools/" data-id="cjch3rw6m0003o89k99n99loy" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2017/11/26/general-tools/" data-id="cjd3zseim0005uk9kymmb4xwn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -189,7 +199,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2017/08/16/notes-1/" data-id="cjch3rw6n0004o89kqx5w8imz" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2017/08/16/notes-1/" data-id="cjd3zsein0007uk9kehbj55qs" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chit-chat/">chit-chat</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
@@ -230,13 +240,14 @@
 <h2 id="vi"><a href="#vi" class="headerlink" title="vi"></a>vi</h2><h3 id="vi-find"><a href="#vi-find" class="headerlink" title="vi find"></a>vi find</h3><p>/string Search forward for string<br>?string Search back for string<br>n Search for next instance of string<br>N Search for previous instance of string</p>
 <h3 id="vi-delete-all-lines"><a href="#vi-delete-all-lines" class="headerlink" title="vi delete all lines"></a>vi delete all lines</h3><p><code>:1,$d</code><br>src: <a href="https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi" target="_blank" rel="external">https://unix.stackexchange.com/questions/161821/how-can-i-delete-all-lines-in-a-file-using-vi</a></p>
 <h3 id="vi-line-moving"><a href="#vi-line-moving" class="headerlink" title="vi line moving"></a>vi line moving</h3><blockquote>
-<p>Therefore, dd p / dd k P are common commands to move a line one down / up.<br>src: <a href="https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line" target="_blank" rel="external">https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line</a></p>
+<p>Therefore, dd p / dd k P are common commands to move a line one down / up.</p>
 </blockquote>
+<p>src: <a href="https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line" target="_blank" rel="external">https://vi.stackexchange.com/questions/2674/how-can-i-easily-move-a-line</a></p>
 <p><code>yy</code> to yank<br><code>p</code> to paste after<br><code>P</code> to paste before<br><code>u</code> to undo</p>
 <h3 id="comment-out-in-vim"><a href="#comment-out-in-vim" class="headerlink" title="comment out in vim"></a>comment out in vim</h3><p>ctrl+v to enter visual block<br>x to delete selection<br>shift+I to enter edit mode on multiple lines</p>
 <p>src: <a href="https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim" target="_blank" rel="external">https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim</a></p>
 <h3 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h3><p>:w [filename]</p>
-<h2 id="curl-proxy"><a href="#curl-proxy" class="headerlink" title="curl proxy"></a>curl proxy</h2><p>-x, –proxy <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#91;&#x70;&#x72;&#111;&#116;&#x6f;&#99;&#x6f;&#108;&#x3a;&#x2f;&#47;&#x5d;&#x5b;&#117;&#x73;&#x65;&#114;&#x3a;&#x70;&#x61;&#115;&#x73;&#119;&#x6f;&#114;&#x64;&#x40;&#93;&#x70;&#114;&#x6f;&#120;&#121;&#x68;&#111;&#115;&#x74;&#x5b;&#58;&#112;&#x6f;&#x72;&#116;&#x5d;">&#91;&#x70;&#x72;&#111;&#116;&#x6f;&#99;&#x6f;&#108;&#x3a;&#x2f;&#47;&#x5d;&#x5b;&#117;&#x73;&#x65;&#114;&#x3a;&#x70;&#x61;&#115;&#x73;&#119;&#x6f;&#114;&#x64;&#x40;&#93;&#x70;&#114;&#x6f;&#120;&#121;&#x68;&#111;&#115;&#x74;&#x5b;&#58;&#112;&#x6f;&#x72;&#116;&#x5d;</a></p>
+<h2 id="curl-proxy"><a href="#curl-proxy" class="headerlink" title="curl proxy"></a>curl proxy</h2><p>-x, –proxy <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#91;&#x70;&#114;&#111;&#116;&#111;&#99;&#x6f;&#108;&#58;&#x2f;&#47;&#93;&#x5b;&#x75;&#x73;&#101;&#x72;&#x3a;&#112;&#97;&#115;&#115;&#119;&#x6f;&#114;&#100;&#64;&#93;&#112;&#114;&#111;&#x78;&#x79;&#104;&#x6f;&#x73;&#x74;&#91;&#x3a;&#112;&#x6f;&#114;&#116;&#x5d;">&#91;&#x70;&#114;&#111;&#116;&#111;&#99;&#x6f;&#108;&#58;&#x2f;&#47;&#93;&#x5b;&#x75;&#x73;&#101;&#x72;&#x3a;&#112;&#97;&#115;&#115;&#119;&#x6f;&#114;&#100;&#64;&#93;&#112;&#114;&#111;&#x78;&#x79;&#104;&#x6f;&#x73;&#x74;&#91;&#x3a;&#112;&#x6f;&#114;&#116;&#x5d;</a></p>
 <h2 id="find-and-kill-that-process"><a href="#find-and-kill-that-process" class="headerlink" title="find (and kill) that process"></a>find (and kill) that process</h2><p><code>ps -A | less</code><br><code>ps -A | grep firefox</code><br><code>ps -feww | grep firefox</code></p>
 <p><code>kill 31098</code><br><code>kill -15 (SIGTERM) 31098</code></p>
 <h2 id="webstorm"><a href="#webstorm" class="headerlink" title="webstorm"></a>webstorm</h2><p><em>minimap</em><br>CodeGlance plug in</p>
@@ -269,7 +280,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2017/06/09/weekly-notes-1/" data-id="cjch3rw6t000bo89ku820kqmx" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2017/06/09/weekly-notes-1/" data-id="cjd3zseiq000auk9k75vlbpyr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clutch/">clutch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mongo/">mongo</a></li></ul>
@@ -338,7 +349,7 @@
 <h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h2><p><code>git reset HEAD~</code></p>
 <p>src: <a href="http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git" target="_blank" rel="external">http://stackoverflow.com/questions/927358/how-to-undo-last-commits-in-git</a></p>
 <p>good ref for other things:<br><a href="http://ohshitgit.com" target="_blank" rel="external">http://ohshitgit.com</a></p>
-<h2 id="vi"><a href="#vi" class="headerlink" title="vi"></a>vi</h2><p><code>set number</code><br><code>:44</code><br><code>syntax off</code></p>
+<h2 id="vi"><a href="#vi" class="headerlink" title="vi"></a>vi</h2><p><code>set number</code><br><code>:44</code><br><code>syntax off</code><br>x - to delete char under cursor</p>
 <p>pasting<br><code>:set paste</code> then <code>i</code> then <code>:set nopaste</code><br>src: <a href="https://stackoverflow.com/questions/3217007/how-do-you-paste-with-vim-without-code-being-commented" target="_blank" rel="external">https://stackoverflow.com/questions/3217007/how-do-you-paste-with-vim-without-code-being-commented</a></p>
 <h2 id="docker-port-publishing"><a href="#docker-port-publishing" class="headerlink" title="docker port publishing"></a>docker port publishing</h2><p><code>docker run -d -p 127.0.0.1:80:8080 ubuntu bash</code></p>
 <p>This binds port 8080 of the container to port 80 on 127.0.0.1 of the host machine.<br>A.k.a <code>-p [host]:[container]</code>. host:container, host:container got it.</p>
@@ -346,7 +357,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2017/05/20/weekly-notes/" data-id="cjch3rw6r0008o89kil45srlq" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2017/05/20/weekly-notes/" data-id="cjd3zseit000euk9kc7icpx9l" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/clutch/">clutch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
@@ -396,7 +407,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2015/11/30/notes/" data-id="cjch3rw6s0009o89k5prnkmv8" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2015/11/30/notes/" data-id="cjd3zseir000buk9kdcc2xygv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -434,7 +445,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://caseycoding.github.io/2015/11/28/hello-blog/" data-id="cjch3rw6q0007o89kbl2w3u8n" class="article-share-link">Share</a>
+      <a data-url="http://caseycoding.github.io/2015/11/28/hello-blog/" data-id="cjd3zseip0009uk9kuebaboah" class="article-share-link">Share</a>
       
       
     </footer>
